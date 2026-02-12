@@ -50,7 +50,7 @@
 
     <h1>"Let's go over some measurements, shall we, zebras."</h1>
 
-    <h2><code>Absolute Tags</code></h2>
+    <h2><code>Absolute Measurements</code></h2>
         <ul>
             <li>Pixels: <code>px</code> | Also known as "picture element", <code>px</code> is the smallest element on the
                 screen. It is the standard measurement to ensure consistent visuals across different platforms and resolutions,
@@ -60,14 +60,19 @@
                 are utilized. This unit does not scale automatically like <code>relative</code> tags do, so content measured in
                 <code>pt</code> might be hard to read if not presented correctly.</li>
         </ul>
-    <h2><code>Relative Tags</code></h2>
+    <h2><code>Relative Measurements</code></h2>
         <ul>
             <li>Parent: <code>em</code> | <code>em</code>, short for "em height" is the unit used for creating scalable and responsive designs.
-                <code>em</code> is relative to the <code>font-size</code> of the nearest parent or current element,
-                depending on where it is being used.</li>
-            <li>Root: <code>rem</code> | asdf</li>
-            <li>Viewport Width: <code>vw</code> | asdf</li>
-            <li>Viewport Height: <code>vh</code> | asdf</li>
+                <code>em</code> is relative to the <code>font-size</code> of the nearest parent or current element, depending
+                on where it is being used.</li>
+            <li>Root: <code>rem</code> | <code>rem</code>, also called "root em" or "root ephemeral unit" is the unit used for
+                creating scalable and responsive designs. Unlike the <code>em</code> unit, <code>rem</code> is relative to the <code>font-size</code>
+                of the root element on the HTML document. This means that if a user has adjusted their browser's default font size,
+                the page will still be shown correctly.</li>
+            <li>Viewport Width: <code>vw</code> | <code>vw</code>, or "viewport width", is a unit for scalable and responsive designs. However,
+                it references the size of the user's browser window. 1<code>vw</code> is equal to 1% of the visible browswer window size.</li>
+            <li>Viewport Height: <code>vh</code> | <code>vh</code>, or "viewport height", is a unit for scalable and responsive designs
+                and is similar to <code>vw</code>.
         </ul>
 
 </body>
