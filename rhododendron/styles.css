@@ -67,3 +67,22 @@ header {
 }
 
 /* rest of desktop baseline here */
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+    }
+
+    #rhodiePic {
+        position: relative;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    #rhodieTitle {
+        position: relative;
+        width: 50vw;
+        height: 100vh;
+        background-color: lightpink;
+    }
+}
