@@ -39,6 +39,8 @@ header {
     width: calc(100vw - 2em);
 }
 
+/* rest of mobile basline here */
+
 @media screen and (orientation: landscape) {
     #rhodiePic {
         width: 50vw;
@@ -54,3 +56,5 @@ header {
         width: 45vw;
     }
 }
+
+/* rest of desktop baseline here */
