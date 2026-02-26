@@ -39,6 +39,15 @@ header {
     width: calc(100vw - 2em);
 }
 
+#rhodieTitle h2 {
+    position: absolute;
+    bottom: 0;
+    left: 3.5em;
+    color: white;
+    font-size: 1em;
+    width: calc(100vw - 2em);
+}
+
 /* rest of mobile basline here */
 
 @media screen and (orientation: landscape) {
