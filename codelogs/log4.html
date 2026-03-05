@@ -10,8 +10,38 @@
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
 	<style>
-		/* in-file CSS here */
-	</style>
+
+        /* Named */
+        h3:nth-of-type(1) + p {
+            color: blue;
+        }
+
+        /* Hexadecimal */
+        h3:nth-of-type(2) + p {
+            color: #ff5733;
+        }
+
+        /* RGB */
+        h3:nth-of-type(3) + p {
+            color: rgb(0, 128, 0);
+        }
+
+        /* RGBA */
+        h3:nth-of-type(4) + p {
+            color: rgba(255, 0, 0, 0.5);
+        }
+
+        /* HSL */
+        h3:nth-of-type(5) + p {
+            color: hsl(240, 100%, 50%);
+        }
+
+        /* HSLA */
+        h3:nth-of-type(6) + p {
+            color: hsla(300, 100%, 50%, 0.5);
+        }
+
+    </style>
 
 </head>
 <body>
@@ -39,30 +69,18 @@
         <h2>How does CSS accept color as a value? Provide examples of colors in these styles:</h2>
 
             <h3><code>Named</code></h3>
-                <p>
-                    Color names can be used directly as values in CSS, this is a simple way to input color.
-                </p> 
+                <p>Color names can be used directly as values in CSS, this is a simple way to input color.</p>
             <h3><code>Hexadecimal</code></h3>
-                <p>
-                    Also known as hex codes, hexadecimals use the # sign follow by digits that define the red, green, and blue
-                    components.
-                </p> 
+                <p>Also known as hex codes, hexadecimals use the # sign follow by digits that define the red, green, and blue
+                    components.</p> 
             <h3><code>RGB</code></h3>
-                <p>
-                    Specifies color using the red, green, and blue color model.
-                </p> 
+                <p>Specifies color using the red, green, and blue color model.</p> 
             <h3><code>RGBA</code></h3>
-                <p>
-                    Similar to RGBA, but adds an alpha channel value, "a" to adjust transparency.
-                </p>
+                <p>Similar to RGBA, but adds an alpha channel value, "a" to adjust transparency.</p>
             <h3><code>HSL</code></h3>
-                <p>
-                    Specifies hue, saturation, and lightness, that is often used by some designers.
-                </p> 
+                <p>Specifies hue, saturation, and lightness, that is often used by some designers.</p> 
             <h3><code>HSLA</code></h3>
-                <p>
-                    The same way RGBA is like RGB, HSLA adds the alpha channel for opacity.
-                </p> 
+                <p>The same way RGBA is like RGB, HSLA adds the alpha channel for opacity.</p> 
 </body>
 </html>
 
