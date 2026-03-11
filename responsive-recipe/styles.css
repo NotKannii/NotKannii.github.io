@@ -1,5 +1,10 @@
 /* Mobile Layout */
 
+header{
+    margin: auto;
+    align-items: center;
+}
+
 h1{
     font-size: 3rem;
 }
