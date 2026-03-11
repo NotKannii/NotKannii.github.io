@@ -1,26 +1,28 @@
-/* AAAHSG */
-
+/* 1. BASE STYLES & MOBILE FIRST */
 body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
   text-align: center;
   background-color: lightgoldenrodyellow;
-
 }
 
-/* Mobile-First Layout */
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 10px;                      
-  align-items: center;            
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
   max-width: 1200px;
-  margin: 10px;                 
+  margin: 10px;
 }
 
 .image1 {
-  width: 100%;            
+  width: 100%;
+  height: auto;
+}
+
+.image2 {
+  display: none; 
+  width: 100%;
   height: auto;
 }
 
@@ -28,95 +30,34 @@ body {
   text-align: left;
 }
 
-.ingredients, 
-.directions {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 10px 0;
-  margin: 10px;
-  text-align: left;
-}
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.subtitle { font-size: 1rem; margin-bottom: 10px; }
 
-.image2 {
-  display: none; /* override with display: block; */
-}
+.ingredients h2, .directions h2 { margin-top: 10px; }
+ul, ol { margin-top: 0; }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.1;
-}
-
-.subtitle{
-  font-size: 1rem;
-  margin-bottom: -2rem;
-}
-.directions h2 {
-  margin-top: -2rem;
-}
-.ingredients h2 {
-  margin-top: -2rem;
-}
-
-.ingredients ul, 
-.directions ol {
-  margin-top: -20px;
-}
-/* Mobile-First Layout */
-
-
-/* Desktop Layout */
-.container {
-  display: flex;
-  flex-direction: column; 
-  gap: 15px;
-}
-
+/* 2. DESKTOP LAYOUT (Only triggers at 1024px+) */
 @media (min-width: 1024px) {
   .container {
-    flex-direction: row;    
+    flex-direction: row;    /* Side-by-side */
     align-items: flex-start;
-    max-width: 1100px;      
-    margin: 0 auto;        
+    margin: 0 auto;
+    padding: 40px;
   }
 
-  .left-content {
-    flex: 2;            
-  }
-
-  .image1 {
-    flex: 1; 
-  }
+  .left-content { flex: 2; }
+  .image1 { flex: 1; }
 
   .image2 {
     display: block;
     flex: 1;
   }
 
-h1 {
-  font-size: 7rem;
-  margin-bottom: 0.5rem;
-  margin-top: 3rem;
-  margin-left: -25rem;
-  line-height: 1;
-}
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+    margin-left: 0;
+  }
 
-.subtitle{
-  font-size: 2.3rem;
-  margin-bottom: -2rem;
-}
-.title-directions{
-  margin-top: -2rem;
-}
-.title-ingredients{
-  margin-top: -2rem;
-}
-
-.ingredients ul, 
-.directions ol {
-  margin-top: -20px;
-  
-}
-
+  .subtitle { font-size: 2.3rem; }
 }
