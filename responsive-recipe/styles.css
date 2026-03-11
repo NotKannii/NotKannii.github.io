@@ -3,14 +3,14 @@
 h1{
     font-size: 3rem;
     margin: auto;
-    align-items: center;
+    text-align: center;
 }
 
 h2{
-    font-size: 0.75rem;
+    font-size: 2rem;
     font-style: italic;
     margin: auto;
-    align-items: center;
+    text-align: center;
 }
 
 
