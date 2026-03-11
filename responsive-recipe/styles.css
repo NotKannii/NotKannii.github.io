@@ -85,9 +85,13 @@ h1 {
     flex: 2;            
   }
 
-  .image {
+  .image1 {
     flex: 1; 
-    size: 0;
+  }
+
+  .image2 {
+    display: block;
+    flex: 1;
   }
 
 h1 {
