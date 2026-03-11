@@ -1,5 +1,11 @@
 /* Mobile Layout */
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* spacing between columns */
+}
+
 h1{
     font-size: 3rem;
     margin: auto;
@@ -12,6 +18,7 @@ h2{
     margin: auto;
     text-align: center;
 }
+
 
 
 /* Desktop Layout */
