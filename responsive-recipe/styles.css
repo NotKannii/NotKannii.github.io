@@ -38,6 +38,10 @@ body {
   text-align: left;
 }
 
+.secondImage {
+  display: none; /* override with display: block; */
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -48,10 +52,10 @@ h1 {
   font-size: 1rem;
   margin-bottom: -2rem;
 }
-.title-directions{
+.directions h2 {
   margin-top: -2rem;
 }
-.title-ingredients{
+.ingredients h2 {
   margin-top: -2rem;
 }
 
@@ -83,7 +87,7 @@ h1 {
 
   .image {
     flex: 1; 
-    size: 
+    size: 0;
   }
 
 h1 {
