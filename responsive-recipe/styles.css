@@ -1,63 +1,96 @@
-/* 1. BASE STYLES & MOBILE FIRST */
+/* --- Base Styles --- */
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
   line-height: 1.5;
   text-align: center;
   background-color: lightgoldenrodyellow;
 }
 
+header {
+  padding: 20px;
+}
+
+/* --- Mobile Layout (Stacked) --- */
 .container {
   display: flex;
-  flex-direction: column; 
-  gap: 10px;
-  max-width: 1200px;
-  margin: 10px;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
 }
 
 .image1 {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
+/* Hide image2 on mobile */
 .image2 {
-  display: none; 
-  width: 100%;
-  height: auto;
+  display: none;
 }
 
 .left-content {
   text-align: left;
+  background: rgba(255,255,255,0.5); /* Light backing to make it readable */
+  padding: 15px;
+  border-radius: 8px;
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-.subtitle { font-size: 1rem; margin-bottom: 10px; }
+.ingredients, .directions {
+  text-align: left;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto; /* Center the columns on mobile */
+}
 
-.ingredients h2, .directions h2 { margin-top: 10px; }
+/* Tighten titles to lists */
+h2 { margin-bottom: 5px; }
 ul, ol { margin-top: 0; }
 
-/* 2. DESKTOP LAYOUT (Only triggers at 1024px+) */
+/* --- Desktop Layout (1024px+) --- */
 @media (min-width: 1024px) {
-  .container {
-    flex-direction: row;    /* Side-by-side */
-    align-items: flex-start;
-    margin: 0 auto;
-    padding: 40px;
-  }
-
-  .left-content { flex: 2; }
-  .image1 { flex: 1; }
-
-  .image2 {
-    display: block;
-    flex: 1;
-  }
-
-  h1 {
-    font-size: 5rem;
+  
+  header {
     text-align: left;
-    margin-left: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
   }
 
-  .subtitle { font-size: 2.3rem; }
+  h1 { font-size: 5rem; margin: 0; }
+  .subtitle { font-size: 1.5rem; margin: 0; }
+
+  .container {
+    flex-direction: row; /* Prep info and 2 images side-by-side */
+    align-items: stretch;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .left-content { flex: 1; }
+  .image1 { flex: 1; object-fit: cover; }
+  
+  /* Show second image on desktop */
+  .image2 { 
+    display: block; 
+    flex: 1; 
+    object-fit: cover; 
+    border-radius: 8px;
+  }
+
+  /* Put Ingredients and Directions side-by-side */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .ingredients, .directions {
+    flex: 1;
+    margin: 0;
+  }
 }
