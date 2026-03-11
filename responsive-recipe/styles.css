@@ -16,6 +16,13 @@
   grid-column: 1 / 3;
 }
 
+.ingredients {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+     padding: 10px;
+}
+
 h1{
     font-size: 3rem;
     margin: -0.2rem;
