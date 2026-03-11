@@ -19,7 +19,7 @@ body {
   margin: 10px;                 
 }
 
-.image img {
+.image1 {
   width: 100%;            
   height: auto;
 }
@@ -38,7 +38,7 @@ body {
   text-align: left;
 }
 
-.secondImage {
+.image2 {
   display: none; /* override with display: block; */
 }
 
