@@ -1,17 +1,16 @@
 /* Mobile Layout */
 
-header{
-    margin: auto;
-    align-items: center;
-}
-
 h1{
     font-size: 3rem;
+    margin: auto;
+    align-items: center;
 }
 
 h2{
     font-size: 0.75rem;
     font-style: italic;
+    margin: auto;
+    align-items: center;
 }
 
 
