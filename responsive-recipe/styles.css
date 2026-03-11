@@ -6,20 +6,16 @@
   gap: 10px; /* spacing between columns */
 }
 
-/* TEMPORARY SO U CAN SEE THE GRID */
-
-.item {
-  background: lightgray;
-  border: 1px solid black;
+.image {
+  grid-column: 3 / 5;
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 h2{
-    font-size: 1rem;
-    font-style: italic;
+    font-size: 0.5rem;
 }
 
 body {
@@ -27,3 +23,9 @@ body {
 }
 
 /* Desktop Layout */
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
