@@ -6,6 +6,13 @@
   gap: 10px; /* spacing between columns */
 }
 
+/* TEMPORARY SO U CAN SEE THE GRID */
+
+.item {
+  background: lightgray;
+  border: 1px solid black;
+}
+
 h1{
     font-size: 3rem;
     margin: auto;
