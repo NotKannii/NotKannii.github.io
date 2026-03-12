@@ -8,16 +8,11 @@ body {
   background-color: lightgoldenrodyellow;
 }
 
-header {
-  padding: 20px;
-}
-
-/* --- Mobile Layout (Stacked) --- */
 .container {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .image1 {
@@ -35,6 +30,7 @@ header {
   text-align: left;
   background: rgba(255,255,255,0.5); /* Light backing to make it readable */
   padding: 15px;
+  margin-top: -2rem;
   border-radius: 8px;
 }
 
@@ -42,12 +38,12 @@ header {
   text-align: left;
   padding: 20px;
   max-width: 600px;
-  margin: 0 auto; /* Center the columns on mobile */
+  margin-top: -40px; /* Center the columns on mobile */
 }
 
 /* Tighten titles to lists */
-h2 { margin-bottom: 5px; }
-ul, ol { margin-top: 0; }
+h2 { margin-bottom: 1px; }
+ul, ol { margin-top: 0.2rem; }
 
 /* --- Desktop Layout (1024px+) --- */
 @media (min-width: 1024px) {
