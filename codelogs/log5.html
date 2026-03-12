@@ -76,21 +76,28 @@
             </p>
         <h3>In one sentence, how would you define the differences between dimensions and resolution in a bitmap image?</h3>
             <p>
-
+                Dimensions refer to the actual number of pixels across the width and height of an image (e.g., 1920 x 1080),
+                while resolution (PPI/DPI) defines how densely those pixels are packed together when the image is printed or
+                displayed in a physical space.
             </p>
-        <h3>For up to 5 points of extra credit, also answer this: What are the similarities and differences between these
-            image file formats? Why are some better than others for specific uses?</h3>
-            <ul>
-                <ol>GIF</ol>
-                <OL>PNG</OL>
-                <OL>JPG/JPEG</OL>
-                <OL>WebP</OL>
-                <OL>SVG</OL>
-            </ul>
+        <h3>What are the similarities and differences between GIF, PNG, JPG/JPEG, WebP, and SVG image file formats? Why are
+            some better than others for specific uses?</h3>
             <p>
-
+                GIF (Graphics Interchange Format) is universally supported for simple looping animations, but is limited to 256
+                colors that give a "gainy" look to the graphic.
+                PNG (Portable Network Graphics) keeps every and all data down to the pixel to insure the image is shown as
+                intended, which can support alpha transparency for smooth, see-through backgrounds, but large file sizes take
+                a long time to load on pages.
+                JPG (Joint Photographic (Experts) Group) throws away some data to keep files small, which means it can
+                compress high-resolution images into a small file that can load instantly, but doesn't support transparent
+                images.
+                WebP (Google's weapon) was created by Google to replace JPG, PNG, and GIF with better compression than JPG, supporting
+                transparency like PNG, and allowing animations like GIF. Though older browsers cannot read WebP, there is not
+                much downside for modern technology.
+                SVG (Scalable Vector Graphics) is made up of mathematical paths rather than pixels, which means it can be extremely
+                zoomed in and not be blurry, but poor performance with complex, high-detail graphics, potentially large file sizes
+                that increase load times, and security risks from embedded malicious code 
             </p>
-
     </section>
 
 </body>
