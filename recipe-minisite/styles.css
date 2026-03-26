@@ -1,0 +1,107 @@
+/* --- Base Styles --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.image1 {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Hide image2 on mobile */
+.image2 {
+  display: none;
+}
+
+.left-content {
+  text-align: left;
+  background: rgba(255,255,255,0.5); /* Light backing to make it readable */
+  padding: 15px;
+  margin-top: -2rem;
+  border-radius: 8px;
+}
+
+.ingredients, .directions {
+  text-align: left;
+  padding: 20px;
+  max-width: 600px;
+  margin-top: -40px; /* Center the columns on mobile */
+}
+
+/* Tighten titles to lists */
+h2 { margin-bottom: 1px; }
+ul, ol { margin-top: 0.2rem; }
+
+/* --- Desktop Layout (1024px+) --- */
+@media (min-width: 1024px) {
+
+    
+  header {
+    text-align: left;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+  }
+
+  h1 { font-size: 5rem; margin: 0; }
+  .subtitle { font-size: 1.5rem; margin: 0; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;          /* smaller gap */
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+  
+.left-content {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  margin-top: 0.1rem;
+}
+
+.image1 {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.image2 {
+  display: block;
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  height: auto;
+}
+
+.ingredients {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -15rem;
+  width: auto;
+}
+
+.directions {
+  grid-column: 2;
+  grid-row: 3;
+  margin: 0;
+  margin-top: -22rem;
+  width: auto;
+}
+  
+}
