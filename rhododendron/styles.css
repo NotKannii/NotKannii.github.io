@@ -1,88 +1,69 @@
-/* mobile-first design Pacific Rhododendron layout */
-
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
 body {
-    padding: 0;
     margin: 0;
 }
 
+/* HEADER CONTAINER */
 header {
-    width: 100vw;
-    height: 100vh;
+    position: relative;
 }
 
 #rhodiePic {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(Pacific\ Rhododendron\ 2\ -\ Gary\ Monroe-1.jpeg);
+    width: 100%;
+    height: 60vh;
+    background-image: url("Pacific Rhododendron 2 - Gary Monroe-1.jpeg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+    position: relative;
 }
 
+/* TITLE ON IMAGE (MOBILE) */
 #rhodieTitle {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5em;
 }
 
 #rhodieTitle h1 {
-    position: absolute;
-    bottom: 0;
-    left: 1em;
     color: white;
-    font-size: 3.5em;
-    width: calc(100vw - 2em);
+    font-size: 2.5em;
+    margin: 0;
 }
 
 #rhodieTitle h2 {
-    position: absolute;
-    bottom: 0;
-    left: 3.5em;
     color: white;
     font-size: 1em;
-    width: calc(100vw - 2em);
+    margin: 0;
 }
 
-/* rest of mobile basline here */
-
-@media screen and (orientation: landscape) {
-    #rhodiePic {
-        width: 50vw;
-    }
-
-    #rhodieTitle {
-        width: 50vw;
-        left: 50vw;
-        background-color: lightpink
-    }
-
-    #rhodieTitle h1 {
-        width: 45vw;
-    }
-}
-
-/* rest of desktop baseline here */
-
+/* DESKTOP LAYOUT */
 @media screen and (min-width: 768px) {
+
     header {
         display: flex;
+        height: 100vh;
     }
 
     #rhodiePic {
-        position: relative;
-        width: 50vw;
-        height: 100vh;
+        flex: 1;         
+        height: 100%;
     }
 
     #rhodieTitle {
+        flex: 1;             
         position: relative;
-        width: 50vw;
-        height: 100vh;
+        height: 100%;
         background-color: lightpink;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3em;
     }
 }
