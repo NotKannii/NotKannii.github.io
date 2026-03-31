@@ -51,12 +51,12 @@ header {
     }
 
     #rhodiePic {
-        flex: 1;         
+        flex: 1;
         height: 100%;
     }
 
     #rhodieTitle {
-        flex: 1;             
+        flex: 1;
         position: relative;
         height: 100%;
         background-color: lightpink;
