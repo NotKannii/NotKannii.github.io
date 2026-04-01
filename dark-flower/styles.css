@@ -67,10 +67,6 @@ header {
         height: 100%;
     }
 
-    body.darkMode #rhodieTitle {
-        background-color: rgb(37, 26, 36);
-    }
-
     #rhodieTitle {
         flex: 1;
         position: relative;
