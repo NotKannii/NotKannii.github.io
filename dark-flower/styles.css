@@ -68,7 +68,7 @@ header {
     }
 
     body.darkMode #rhodieTitle {
-        background-color: black;
+        background-color: rgb(37, 26, 36);
     }
 
     #rhodieTitle {
