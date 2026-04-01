@@ -4,12 +4,12 @@
 }
 
 body.darkMode {
-    background-color: pink;
+    background-color: rgb(33, 25, 26);
     color: white;
 }
 
 body.darkMode h1 {
-    color: pink;
+    color: rgb(255, 181, 190);
 }
 
 body {
