@@ -68,12 +68,12 @@ header {
     }
 
     body.darkMode {
-        background-color: rgb(49, 47, 49);
+        background-color: pink;
         color: white;
     }
 
     body.darkMode h1 {
-        color: rgb(179, 94, 159);
+        color: pink;
     }
 
 }
