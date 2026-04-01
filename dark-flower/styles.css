@@ -3,6 +3,15 @@
     font-family: Arial, sans-serif;
 }
 
+body.darkMode {
+    background-color: pink;
+    color: white;
+}
+
+body.darkMode h1 {
+    color: pink;
+}
+
 body {
     margin: 10;
 }
@@ -65,15 +74,6 @@ header {
         flex-direction: column;
         justify-content: center;
         padding: 3em;
-    }
-
-    body.darkMode {
-        background-color: pink;
-        color: white;
-    }
-
-    body.darkMode h1 {
-        color: pink;
     }
 
 }
