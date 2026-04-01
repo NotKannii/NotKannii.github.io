@@ -66,4 +66,14 @@ header {
         justify-content: center;
         padding: 3em;
     }
+
+    body.darkMode {
+        background-color: darkgrey;
+        color: white;
+    }
+
+    body.darkMode h1 {
+        color: red;
+    }
+
 }
