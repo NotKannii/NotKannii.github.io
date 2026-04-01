@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 10;
+}
+
+/* HEADER CONTAINER */
+header {
+    position: relative;
+}
+
+#rhodiePic {
+    width: 100%;
+    height: 60vh;
+    background-image: url("Pacific Rhododendron 2 - Gary Monroe-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* TITLE ON IMAGE (MOBILE) */
+#rhodieTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5em;
+}
+
+#rhodieTitle h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#rhodieTitle h2 {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+/* DESKTOP LAYOUT */
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        height: 100vh;
+    }
+
+    #rhodiePic {
+        flex: 1;
+        height: 100%;
+    }
+
+    #rhodieTitle {
+        flex: 1;
+        position: relative;
+        height: 100%;
+        background-color: lightpink;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3em;
+    }
+}
