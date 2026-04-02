@@ -6,6 +6,7 @@ body.darkMode {
 body.darkMode h3 {
     color: rgb(255, 181, 190);
 }
+
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
@@ -67,11 +68,15 @@ header {
         flex: 1;
         position: relative;
         height: 100%;
-        background-color: rgb(57, 40, 43);
+        background-color: rgb(lightpink);
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 3em;
+    }
+
+    body.darkMode #rhodieTitle {
+        background-color: rgb(37, 26, 27);
     }
 }
