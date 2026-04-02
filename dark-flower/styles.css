@@ -67,7 +67,7 @@ header {
         flex: 1;
         position: relative;
         height: 100%;
-        background-color: lightpink;
+        background-color: rgb(57, 40, 43);
 
         display: flex;
         flex-direction: column;
