@@ -76,8 +76,8 @@ header {
         padding: 3em;
     }
 
-    /**body.darkMode #rhodieTitle {
+        body.darkMode #rhodieTitle {
         background-color: rgb(37, 26, 27);
     }
-        **/
+
 }
