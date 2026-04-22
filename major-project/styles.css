@@ -21,8 +21,8 @@ body {
 #kaphi_title {
   position: absolute;
   right: 0;
-  bottom: 0;
-  height: 90%;
+  top: 0;
+  height: 100%;
   z-index: 2;
 }
 
