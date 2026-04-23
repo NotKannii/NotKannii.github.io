@@ -15,10 +15,20 @@ function showCredits() {
 
 // TRAIN SCENE
 
-function startTrainScene() {
-  const bg = document.getElementById("background");
+document.getElementById("play").onclick = () => {
+  // hide title
+  document.getElementById("title-screen").style.display = "none";
 
-  bg.src = "images/train_closed.png";
+  // show first train scene
+  document.getElementById("scene-one").style.display = "block";
+
+  startTrainScene();
+};
+
+function startTrainScene() {
+  const bg = document.getElementById("background_train_closed");
+
+  bg.src = "images/background_train_closed";
 
   setTimeout(() => {
     openDoors();
@@ -26,9 +36,9 @@ function startTrainScene() {
 }
 
 function openDoors() {
-  const bg = document.getElementById("background");
+  const bg = document.getElementById("background_train_open");
 
-  bg.src = "images/train_open.png";
+  bg.src = "images/background_train_open.PNG";
 
   document.getElementById("continue").style.display = "block";
 }

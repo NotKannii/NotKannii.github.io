@@ -3,6 +3,11 @@ body {
   background: black;
 }
 
+#scene-one,
+#scene-one2 {
+  display: none;
+}
+
 /** TITLE SCREEN STUFF **/
 
 #title-screen {
