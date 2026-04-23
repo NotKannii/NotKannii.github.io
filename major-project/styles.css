@@ -75,7 +75,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 4;
 }
 
 #kaphi_train_closed {
@@ -83,14 +83,41 @@ body {
   bottom: 0;
   left: 40%;
   height: 80%;
-  z-index: 2;
-}
-
-#continue_one {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
+  z-index: 5;
 }
 
 /** SCENE ONE TRAIN STUFF **/
+
+/** SCENE TWO TRAIN STUFF **/
+
+#scene-one2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#background_train_open {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 6;
+}
+
+#kaphi_train_open {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  height: 80%;
+  z-index: 7;
+}
+
+#continue_two {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 8
+}
+
+/** SCENE TWO TRAIN STUFF **/
