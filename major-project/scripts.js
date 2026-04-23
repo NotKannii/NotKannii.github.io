@@ -12,7 +12,7 @@ document.getElementById("credits").onclick = () => {
 function startTrainScene() {
   const bg = document.getElementById("background_train_closed");
 
-  bg.src = "images/background_train_closed.png";
+  bg.src = "images/background_train_closed.PNG";
 
   setTimeout(() => {
     openDoors();
