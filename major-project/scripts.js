@@ -10,7 +10,7 @@ document.getElementById("credits").onclick = () => {
 
 function startGame() {
   console.log("Game starting...");
-  // Later: switch to first scene
+  // switch to first scene
 }
 
 function showCredits() {
@@ -27,7 +27,7 @@ document.getElementById("play").onclick = () => {
 
 function startTrainScene() {
   // Step 1: show initial scene
-  document.getElementById("background").src = "images/train_closed.png";
+  document.getElementById("background_train_closed").src = "images/train_closed.png";
 
   // Step 2: wait a few seconds
   setTimeout(() => {
