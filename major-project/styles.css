@@ -73,6 +73,19 @@ body {
   z-index: 1;
 }
 
+#kaphi_train_closed {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  height: 80%;
+  z-index: 2;
+}
 
+#continue_one {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
 
 /** SCENE ONE TRAIN STUFF **/
