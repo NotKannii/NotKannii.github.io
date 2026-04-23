@@ -81,7 +81,6 @@ body {
 #kaphi_train_closed {
   position: absolute;
   top: 0;
-  left: -25%;
   height: 100%;
   z-index: 5;
 }
@@ -108,7 +107,6 @@ body {
 #kaphi_train_open {
   position: absolute;
   top: 0;
-  left: -25%;
   height: 100%;
   z-index: 7;
 }
