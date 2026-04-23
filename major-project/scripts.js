@@ -16,7 +16,7 @@ function startTrainScene() {
 
   setTimeout(() => {
     openDoors();
-  }, 5000);
+  }, 3000);
 }
 
 function openDoors() {
