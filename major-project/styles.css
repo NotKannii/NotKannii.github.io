@@ -108,8 +108,7 @@ body {
 #kaphi_train_open {
   position: absolute;
   top: 0;
-  left: 20%;
-  height: 80%;
+  height: 100%;
   z-index: 7;
 }
 
