@@ -1,26 +1,12 @@
-// TITLE SCREEN
-
 document.getElementById("play").onclick = () => {
   document.getElementById("title-screen").style.display = "none";
   document.getElementById("scene-one").style.display = "block";
 
   startTrainScene();
 };
+
 document.getElementById("credits").onclick = () => {
-  showCredits();
-};
-
-function showCredits() {
   alert("Credits:\nshes working on it trust");
-}
-
-
-// TRAIN SCENE
-
-  // show first train scene
-  document.getElementById("scene-one").style.display = "block";
-
-  startTrainScene();
 };
 
 function startTrainScene() {
@@ -39,6 +25,6 @@ function openDoors() {
   document.getElementById("continue_two").style.display = "block";
 }
 
-document.getElementById("continue").onclick = () => {
+document.getElementById("continue_two").onclick = () => {
   console.log("Next scene coming soon...");
 };
