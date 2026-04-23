@@ -43,6 +43,17 @@ function openDoors() {
   document.getElementById("continue").style.display = "block";
 }
 
+function openDoors() {
+  // hide closed version
+  document.getElementById("scene-one").style.display = "none";
+
+  // show open version
+  document.getElementById("scene-one2").style.display = "block";
+
+  // show continue button
+  document.getElementById("continue_two").style.display = "block";
+}
+
 document.getElementById("continue").onclick = () => {
   console.log("Next scene coming soon...");
 };
