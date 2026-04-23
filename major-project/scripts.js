@@ -26,5 +26,5 @@ function openDoors() {
 }
 
 document.getElementById("continue_two").onclick = () => {
-  console.log("Next scene coming soon...");
+  alert("Next scene coming soon...(aka she didnt get this far)");
 };
