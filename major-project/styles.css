@@ -135,7 +135,7 @@ body {
   top: 200px;
   left: 500px;
   height: 65%;
-  z-index: 3;
+  z-index: 4;
   cursor: pointer;
 }
 
