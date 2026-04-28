@@ -1,35 +1,42 @@
-const lines = [
-  "palcholder.",
-  "plavcerholder"
-];
+document.addEventListener("DOMContentLoaded", () => {
 
-let currentLine = 0;
-let isTalking = false;
+  const lines = [
+    "palcholder.",
+    "plavcerholder"
+  ];
 
-const character = document.getElementById("zoblin_outside");
-const box = document.getElementById("zoblin_outside_dialogue_box");
-const text = document.getElementById("zoblin_outside_dialogue_text");
+  let currentLine = 0;
+  let isTalking = false;
 
-// trigger dialogue
-character.onclick = (e) => {
-  e.stopPropagation();
+  const character = document.getElementById("zoblin_outside");
+  const box = document.getElementById("zoblin_outside_dialogue_box");
+  const text = document.getElementById("zoblin_outside_dialogue_text");
 
-  if (isTalking) return;
-
-  isTalking = true;
-
-  text.innerText = lines[currentLine];
-  box.style.display = "block";
-
-  if (currentLine < lines.length - 1) {
-    currentLine++;
+  if (!character || !box || !text) {
+    console.log("Missing elements:", { character, box, text });
+    return;
   }
-};
 
-// close dialogue
-document.onclick = () => {
-  if (!isTalking) return;
+  character.addEventListener("click", (e) => {
+    e.stopPropagation();
 
-  box.style.display = "none";
-  isTalking = false;
-};
+    if (isTalking) return;
+
+    isTalking = true;
+
+    text.innerText = lines[currentLine];
+    box.style.display = "block";
+
+    if (currentLine < lines.length - 1) {
+      currentLine++;
+    }
+  });
+
+  document.addEventListener("click", () => {
+    if (!isTalking) return;
+
+    box.style.display = "none";
+    isTalking = false;
+  });
+
+});
