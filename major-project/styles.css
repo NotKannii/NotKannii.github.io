@@ -166,7 +166,7 @@ body {
   color: white;
   font-size: 20px;
 
-  display: none; /* hidden by default */
+  /* display: none; hidden by default */
   z-index: 100;
   text-align: center;
 }
