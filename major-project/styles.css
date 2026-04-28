@@ -136,6 +136,13 @@ body {
   height: 65%;
 }
 
+.outside_door {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  height: 65%;
+}
+
 /* --- MAIN 1 --- */
 
 /* --- LAB 1 --- */
