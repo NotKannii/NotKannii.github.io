@@ -19,26 +19,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   character.addEventListener("click", (e) => {
-  e.stopPropagation();
-  console.log("ZOBLIN CLICKED");
+    e.stopPropagation();
+    console.log("ZOBLIN CLICKED");
 
-  // show box if hidden
-  box.style.display = "block";
+    // show box if hidden
+    box.style.display = "block";
 
-  // show current line
-  text.innerText = lines[currentLine];
+    // show current line
+    text.innerText = lines[currentLine];
 
-  // move to next line
-  currentLine++;
+    // move to next line
+    currentLine++;
 
-  // if we reached the end, reset after showing last line
-  if (currentLine >= lines.length) {
-    currentLine = 0;
-    isTalking = false;
-  } else {
-    isTalking = true;
-  }
-});
+    // if we reached the end, reset after showing last line
+    if (currentLine >= lines.length) {
+      currentLine = 0;
+      isTalking = false;
+    } else {
+      isTalking = true;
+    }
+  });
 
   document.addEventListener("click", () => {
     if (!isTalking) return;
