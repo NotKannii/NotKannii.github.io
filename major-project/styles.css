@@ -3,12 +3,7 @@ body {
   background: black;
 }
 
-#scene-one,
-#scene-one2 {
-  display: none;
-}
-
-/** TITLE SCREEN STUFF **/
+/* ---------- TITLE SCREEN ---------- */
 
 #title-screen {
   position: relative;
@@ -59,63 +54,44 @@ body {
   cursor: default;
 }
 
-/** TITLE SCREEN STUFF **/
+/* ---------- SCENES  ---------- */
 
-/** SCENE ONE TRAIN STUFF **/
-
-#scene-one {
+.scene {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-#background_train_closed {
+.background {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 4;
 }
 
-#kaphi_train_closed {
+.character {
   position: absolute;
   top: 0;
   height: 100%;
-  z-index: 5;
 }
 
-/** SCENE ONE TRAIN STUFF **/
+/* ---------- CONTINUE BUTTON ---------- */
 
-/** SCENE TWO TRAIN STUFF **/
-
-#scene-one2 {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#background_train_open {
+.continue {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 6;
+  bottom: 40px;
+  right: 40px;
+
+  padding: 20px 40px;
+  font-size: 24px;
+
+  background: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-#kaphi_train_open {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  z-index: 7;
+.continue:hover {
+  background: #777;
 }
-
-#continue_two {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 8
-}
-
-/** SCENE TWO TRAIN STUFF **/

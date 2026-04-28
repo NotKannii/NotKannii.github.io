@@ -1,51 +1,32 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-    <!-- meta tags and title -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Major Project: Condorian</title>
-
-    <!-- external and internal CSS -->
-    <link rel="stylesheet" href="styles.css" media="all">
-    <style>
-        /* in-file CSS here */
-    </style>
-
-    <!-- external and internal JavaScript -->
-    <script src="scripts.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condorian</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="background-color: black;">
+<body>
 
-<!--  Where the player starts  -->
-    <div id="title-screen">
+<div id="title-screen">
 
-        <img src="images/kaphi_title.png" id="kaphi_title" />
-        <img src="images/foreground_title.png" id="foreground_title" />
+  <img src="images/kaphi_title.png" id="kaphi_title" />
+  <img src="images/foreground_title.png" id="foreground_title" />
 
-        <div id="menu">
-            <div class="box title">First Stop</div>
-            <button class="box" id="play">Begin</button>
-            <button class="box" id="credits">Credits</button>
-        </div>
+  <div id="menu">
+    <div class="box title">First Stop</div>
 
-    </div>
+    <a href="train1.html">
+      <button class="box">Begin</button>
+    </a>
 
-<!--  Kaphi standing in dark train. Sneaky poster on the side.  -->
-    <div id="scene-one">
-        <img id="background_train_closed" src="images/background_train_closed.PNG">
-        <img id="kaphi_train_closed" src="images/kaphi_train_closed.PNG">
-    </div>
+    <button class="box" onclick="alert('Credits:\nshes working on it trust')">
+      Credits
+    </button>
+  </div>
 
-<!--  Train lights up. CONTINUE button to move on to next scene.  -->
-    <div id="scene-one2">
-        <img id="background_train_open" src="images/background_train_open.PNG">
-        <img id="kaphi_train_open" src="images/kaphi_train_open.PNG">
-
-    </div>
+</div>
 
 </body>
+</html>
