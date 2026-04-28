@@ -1,3 +1,5 @@
+console.log("ZOBLIN JS LOADED");
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const lines = [
