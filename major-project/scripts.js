@@ -47,8 +47,4 @@ document.addEventListener("DOMContentLoaded", () => {
     isTalking = false;
   });
 
-box.style.display = "block";
-box.style.background = "red";
-box.style.zIndex = "9999";
-
 });
