@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("ZOBLIN JS LOADED");
 
-  const lines = ["palcholder.", "plavcerholder"];
+  const lines = [
+    "palcholder.",
+    "plavcerholder"
+  ];
+
   let currentLine = 0;
   let isTalking = false;
 
@@ -15,17 +19,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   character.addEventListener("click", (e) => {
-    e.stopPropagation();
-    console.log("ZOBLIN CLICKED");
+  e.stopPropagation();
+  console.log("ZOBLIN CLICKED");
 
-    if (isTalking) return;
+  // show box if hidden
+  box.style.display = "block";
+
+  // show current line
+  text.innerText = lines[currentLine];
+
+  // move to next line
+  currentLine++;
+
+  // if we reached the end, reset after showing last line
+  if (currentLine >= lines.length) {
+    currentLine = 0;
+    isTalking = false;
+  } else {
     isTalking = true;
-
-    text.innerText = lines[currentLine];
-    box.style.display = "block";
-
-    if (currentLine < lines.length - 1) currentLine++;
-  });
+  }
+});
 
   document.addEventListener("click", () => {
     if (!isTalking) return;
