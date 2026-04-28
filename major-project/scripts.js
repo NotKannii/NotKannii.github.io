@@ -1,7 +1,7 @@
 const lines = [
-  "Oh... you actually showed up.",
-  "I wasn’t sure you would.",
-  "Well... the door’s right there."
+    "palcholder.",
+    "plavcerholder"
+    "plavcerholder"
 ];
 
 let currentLine = 0;

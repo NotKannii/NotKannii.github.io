@@ -139,12 +139,16 @@ body {
   cursor: pointer;
 }
 
+/* --- idk whats going on lol --- */
+
 .outside_door {
   position: absolute;
   height: 100%;
   z-index: 2;
   cursor: pointer;
 }
+
+/* --- idk whats going on lol --- */
 
 #zoblin_outside_dialouge_box {
   position: absolute;
