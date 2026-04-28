@@ -136,6 +136,7 @@ body {
   left: 500px;
   height: 65%;
   z-index: 4;
+  pointer-events: auto;
   cursor: pointer;
 }
 

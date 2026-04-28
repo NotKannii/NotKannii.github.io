@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.addEventListener("click", () => {
-    if (!isTalking) return;
+  document.addEventListener("click", (e) => {
+    if (e.target === character) return;
 
     box.style.display = "none";
     isTalking = false;
