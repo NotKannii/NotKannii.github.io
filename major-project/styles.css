@@ -63,14 +63,14 @@ body {
   overflow: hidden;
 }
 
-.background {
+.background_train_closed, .background_train_open {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.character {
+.kaphi_train_open, .kaphi_train_closed {
   position: absolute;
   top: 0;
   height: 100%;
