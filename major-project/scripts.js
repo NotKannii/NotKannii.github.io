@@ -7,8 +7,8 @@ let currentLine = 0;
 let isTalking = false;
 
 const character = document.getElementById("zoblin_outside");
-const box = document.getElementById("zoblin_outside_dialouge_box");
-const text = document.getElementById("zoblin_outside_dialouge_text");
+const box = document.getElementById("zoblin_outside_dialogue_box");
+const text = document.getElementById("zoblin_outside_dialogue_text");
 
 // trigger dialogue
 character.onclick = (e) => {
