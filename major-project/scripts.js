@@ -1,7 +1,6 @@
 const lines = [
     "palcholder.",
     "plavcerholder"
-    "plavcerholder"
 ];
 
 let currentLine = 0;
@@ -13,6 +12,8 @@ const text = document.getElementById("zoblin_outside_dialouge_text");
 
 // trigger dialouge
 character.onclick = () => {
+  e.stopPropagation();
+
   if (isTalking) return;
 
   isTalking = true;
