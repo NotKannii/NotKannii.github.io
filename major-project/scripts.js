@@ -1,6 +1,6 @@
 const lines = [
-    "palcholder.",
-    "plavcerholder"
+  "palcholder.",
+  "plavcerholder"
 ];
 
 let currentLine = 0;
@@ -10,8 +10,8 @@ const character = document.getElementById("zoblin_outside");
 const box = document.getElementById("zoblin_outside_dialouge_box");
 const text = document.getElementById("zoblin_outside_dialouge_text");
 
-// trigger dialouge
-character.onclick = () => {
+// trigger dialogue
+character.onclick = (e) => {
   e.stopPropagation();
 
   if (isTalking) return;
@@ -21,7 +21,6 @@ character.onclick = () => {
   text.innerText = lines[currentLine];
   box.style.display = "block";
 
-  // repeat, stop at lats line
   if (currentLine < lines.length - 1) {
     currentLine++;
   }
