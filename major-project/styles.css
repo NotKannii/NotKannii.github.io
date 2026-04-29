@@ -122,7 +122,7 @@ body {
 
 /* --- OUTSIDE --- */
 
-.background_outside {
+#background_outside {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -140,8 +140,6 @@ body {
   cursor: pointer;
 }
 
-/* --- idk whats going on lol --- */
-
 .outside_door {
   position: absolute;
   height: 19%;
@@ -150,8 +148,6 @@ body {
   z-index: 2;
   cursor: pointer;
 }
-
-/* --- idk whats going on lol --- */
 
 #zoblin_outside_dialogue_box {
   position: absolute;
