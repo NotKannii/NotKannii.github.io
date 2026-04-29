@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const lines = [
     "palcholder.",
-    "plavcerholder"
+    "RUFRUFURFUURF"
   ];
 
   let currentLine = 0;
-  let isTalking = false;
 
   const character = document.getElementById("zoblin_outside");
   const box = document.getElementById("zoblin_outside_dialogue_box");
@@ -19,32 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   character.addEventListener("click", (e) => {
-    e.stopPropagation();
-    console.log("ZOBLIN CLICKED");
+  e.stopPropagation();
+  console.log("ZOBLIN CLICKED");
 
-    // show box if hidden
-    box.style.display = "block";
+  box.style.display = "block";
 
-    // show current line
-    text.innerText = lines[currentLine];
+  text.innerText = lines[currentLine];
 
-    // move to next line
-    currentLine++;
+  currentLine++;
 
-    // if we reached the end, reset after showing last line
-    if (currentLine >= lines.length) {
-      currentLine = 0;
-      isTalking = false;
-    } else {
-      isTalking = true;
-    }
-  });
+  // reset if at end
+  if (currentLine >= lines.length) {
+    currentLine = 0;
+  }
 
-  document.addEventListener("click", () => {
-    if (!isTalking) return;
-
+  // auto-close
+  setTimeout(() => {
     box.style.display = "none";
-    isTalking = false;
-  });
+  }, 4000);
+});
 
 });
