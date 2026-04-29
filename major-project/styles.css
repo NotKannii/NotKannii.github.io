@@ -181,6 +181,7 @@ body {
   left: 63%;
   z-index: 2;
   cursor: pointer;
+  /* -- no zindex cuz roblin gonna talk abt it --*/
 }
 
 #main1_lab_door {
@@ -190,6 +191,7 @@ body {
   left: 36%;
   z-index: 2;
   cursor: pointer;
+  z-index: 2;
 }
 
 #main1_roblin {
