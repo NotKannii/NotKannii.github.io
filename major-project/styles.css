@@ -145,7 +145,7 @@ body {
 .outside_door {
   position: absolute;
   height: 19%;
-  top: 38.5%;
+  top: 420px;
   right: -7px;
   z-index: 2;
   cursor: pointer;
@@ -166,10 +166,6 @@ body {
   text-align: center;
   display: none;
   z-index: 100;
-}
-
-#zoblin_outside_dialogue_box p {
-  
 }
 
 /* --- MAIN 1 --- */
