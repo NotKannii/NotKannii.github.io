@@ -145,7 +145,7 @@ body {
 .outside_door {
   position: absolute;
   height: 19%;
-  top: 420px;
+  top: 38.5%;
   right: -7px;
   z-index: 2;
   cursor: pointer;
