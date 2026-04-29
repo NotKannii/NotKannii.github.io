@@ -155,17 +155,16 @@ body {
 
 #zoblin_outside_dialogue_box {
   position: absolute;
-  top: 20px;
-  height: 10%;
-  left: 15%;
-  width: 60%;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-  font-size: 28px;
+  top: 20px; 
+  left: 45%;
+  transform: translateX(-50%); 
+  width: 80%; 
+  padding: 50px; 
+  background: rgba(0, 0, 0, 0.85); 
+  color: white; 
+  font-size: 20px; 
+  z-index: 100; 
   text-align: center;
-  display: none;
-  z-index: 100;
 }
 
 /* --- MAIN 1 --- */
