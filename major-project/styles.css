@@ -175,11 +175,21 @@ body {
 }
 
 #main1_bal_door {
-
+  position:absolute;
+  height: 50%;
+  top: 15%;
+  left: 63%;
+  z-index: 2;
+  cursor: pointer;
 }
 
 #main1_lab_door {
-
+  position:absolute;
+  height: 43%;
+  top: 20%;
+  left: 36%;
+  z-index: 2;
+  cursor: pointer;
 }
 
 #main1_roblin {
@@ -187,7 +197,7 @@ body {
 }
 
 #main1_boblin {
-  
+
 }
 
 /* --- LAB 1 --- */
