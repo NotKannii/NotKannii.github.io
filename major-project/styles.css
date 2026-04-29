@@ -166,6 +166,30 @@ body {
 
 /* --- MAIN 1 --- */
 
+#main1_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#main1_bal_door {
+
+}
+
+#main1_lab_door {
+
+}
+
+#main1_roblin {
+
+}
+
+#main1_boblin {
+  
+}
+
 /* --- LAB 1 --- */
 
 /* --- HOLDING --- */
