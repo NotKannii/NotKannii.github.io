@@ -37,7 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (zoblin) {
     zoblin.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["Hey!", "Go inside."]);
+      startDialogue(["Hey! First train, as usual, but you ain't beating me.",
+        "Head inside, they've been talking about you all morning.",
+        "Especially that Coblin kid, something about the higher ups.",
+        "Even though it's his day today, punch him for me."]);
     });
   }
 
@@ -60,6 +63,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const coblin = document.getElementById("lab1_coblin");
   if (coblin) {
     coblin.addEventListener("click", (e) => {
+      e.stopPropagation();
+      startDialogue(["Coblin talk"]);
+    });
+  }
+
+    const car = document.getElementById("lab1_car");
+  if (car) {
+    car.addEventListener("click", (e) => {
       e.stopPropagation();
       startDialogue(["Coblin talk"]);
     });
