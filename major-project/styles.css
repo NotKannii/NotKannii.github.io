@@ -532,8 +532,8 @@ body {
     #lab1_monitor {
     position: absolute;
     height: 15%;
-    top: 27%;
-    left: 60%;
+    top: 29%;
+    left: 65%;
     z-index: 7;
     cursor: pointer;
   }
