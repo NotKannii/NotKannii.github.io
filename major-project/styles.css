@@ -425,12 +425,17 @@ body {
   }
 
   .restart {
-    font-size: 14px;
-    padding: 8px 14px;
+    font-size: 18px;
+    padding: 12px 20px;
   }
 
-#M_kaphi_train_closed { /* Train closed */
-
+  .continue {
+    font-size: 28px;
+    padding: 24px 50px;
   }
 
+  #M_kaphi_train_closed {
+  /* Train closed */
+
+  }
 }
