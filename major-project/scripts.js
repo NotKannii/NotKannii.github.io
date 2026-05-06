@@ -1,4 +1,4 @@
-function createDialogue(characterId, boxId, textId, lines, duration = 5000) {
+function createDialogue(characterId, boxId, textId, lines, duration = 8000) {
   let currentLine = 0;
 
   const character = document.getElementById(characterId);
@@ -30,7 +30,7 @@ function createDialogue(characterId, boxId, textId, lines, duration = 5000) {
 document.addEventListener("DOMContentLoaded", () => {
   createDialogue(
     "zoblin_outside",
-    "zoblin_outside_dialogue_box",
+    "dialogue_box",
     "zoblin_outside_dialogue_text",
     [
       "Hey! First train, as usual?",
