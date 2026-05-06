@@ -45,18 +45,15 @@ body {
 }
 
 #dialogue_box {
-  position: absolute;
-  top: 20px;
-  left: 45%;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  padding: 50px;
-  background: rgba(0, 0, 0, 0.85);
+  background: black;
   color: white;
-  font-size: 20px;
-  z-index: 100;
-  text-align: center;
-  display: none;
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
 }
 
 /* ---------- TITLE SCREEN ---------- */
