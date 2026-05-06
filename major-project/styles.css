@@ -403,3 +403,22 @@ body {
   object-fit: cover;
   z-index: 1;
 }
+
+/* --- evil below --- */
+
+@media screen and (max-width: 430px) {
+  /* iPhone 12 / Pixel 7 range */
+
+  #dialogue_box {
+    width: 90%;
+    font-size: 18px;
+    bottom: 10px;
+    padding: 15px;
+  }
+
+  .restart {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+}
