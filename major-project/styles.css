@@ -349,7 +349,7 @@ body {
 
 /* --- BAL 1 --- */
 
-#bal_arua {
+#bal_arua, #bal_arua_bad, #bal_arua_good {
   position: absolute;
   z-index: 2;
   transform: rotate(-90deg);
