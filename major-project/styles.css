@@ -406,8 +406,16 @@ body {
 
 /* --- evil below --- */
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 430px) {
   /* iPhone 12 / Pixel 7 range */
+
+  .mobile {
+    display: block;
+  }
 
   #dialogue_box {
     width: 90%;
