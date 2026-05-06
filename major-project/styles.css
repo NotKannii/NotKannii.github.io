@@ -245,9 +245,10 @@ body {
 
 #lab1_coblin {
   position: absolute;
-  top: 20%;
-  left: 50%;
-  height: 70%;
+  top: 35%;
+  left: 57%;
+  height: 40%;
+  transform: rotate(-90deg);
   z-index: 6;
   pointer-events: auto;
   cursor: pointer;
