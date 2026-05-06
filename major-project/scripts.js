@@ -104,10 +104,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (badheld) {
     badheld.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["eow",
-        "*Why do you keep this cat around?*",
-        "*It stares. A little too long.*",
-        "*Maybe that's why.*"
+      startDialogue(["Ah, what a sight seeing you here.",
+        "*What is THAT*",
+        "I take it you're here to observe. Like the rest of them.",
+        "Make it quick.",
+        "*This subject was not in your records. When did it get here?*",
+        "*Better ask Coblin.*",
+        "'Better ask Coblin?' I was really hoping you were different, I was wrong",
+        "Oh, well, it's already here. Your systems felt it.",
+        "Bringing me here was one thing. Keeping me? I am a beacon.",
+        "A beacon for the beings above.",
+        "It's here. It will not wait much longer.",
+        "I wonder who it is this time..."
       ]);
     });
   }
@@ -120,10 +128,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (goodheld) {
     goodheld.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["RUFURUFRURF",
-        "*Why do you keep this cat around?*",
-        "*It stares. A little too long.*",
-        "*Maybe that's why.*"
+      startDialogue(["Foolsih",
+        "*What is THAT*",
+        "You set these chains, why break them?",
+        "*You didn't restrain it. This subject was not in your records.*",
+        "*It squints its eyes. Eye? It squints.*",
+        "You truly didn't...",
+        "Maybe you are different, I was wrong",
+        "I don't forgive these people.",
+        "Bringing me here was one thing. Keeping me? I am a beacon.",
+        "A beacon for the beings above.",
+        "But, maybe you're the piece.",
+        "Leave now. It's here. It will not wait much longer."
       ]);
     });
   }
