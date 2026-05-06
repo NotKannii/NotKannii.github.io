@@ -120,6 +120,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+    const car2 = document.getElementById("lab2_car");
+  if (car2) {
+    car2.addEventListener("click", (e) => {
+      e.stopPropagation();
+      startDialogue(["Tell me, Astrope.",
+        "*That is NOT cat.*",
+        "Have you made the right choice?",
+        "*The cat's gaze pierces your soul. Pondering.*",
+        "*Did you make the right choice?"
+      ]);
+    });
+  }
+
 /* =======================
      GUUUUD : HOLDING 2 / BAL 2 CHARACTERS
   ======================= */
@@ -128,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (goodheld) {
     goodheld.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["Foolsih",
+      startDialogue(["Foolish",
         "*What is THAT*",
         "You set these chains, why break them?",
         "*You didn't restrain it. This subject was not in your records.*",
