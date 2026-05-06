@@ -6,9 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const box = document.getElementById("dialogue_box");
   const text = document.getElementById("dialogue_text");
 
-  box.style.display = "block"; // show
-  box.style.display = "none";  // hide
-
   function startDialogue(lines) {
     currentLines = lines;
     currentIndex = 0;
@@ -28,47 +25,29 @@ document.addEventListener("DOMContentLoaded", () => {
     text.innerText = currentLines[currentIndex];
   }
 
-  // Zoblin outside
-  document.getElementById("zoblin_outside").addEventListener("click", (e) => {
-    e.stopPropagation();
-    startDialogue([
-      "Hey! First train, as usual?",
-      "Well, head on inside. I heard the others chatting about you again.",
-      "Especially that Coblin kid. He thinks he’s so good in the lab.",
-      "Ah, I guess he's there for a reason, no?",
-      "Punch him for me? He still owes me for holding the trains for him."
-    ]);
-  });
+  const zoblin = document.getElementById("zoblin_outside");
 
-  // boblin main1
-  document.getElementById("main1_boblin").addEventListener("click", (e) => {
-    e.stopPropagation();
-    startDialogue([
-      "Hey! First train, as usual?",
-      "Well, head on inside. I heard the others chatting about you again.",
-      "Especially that Coblin kid. He thinks he’s so good in the lab.",
-      "Ah, I guess he's there for a reason, no?",
-      "Punch him for me? He still owes me for holding the trains for him."
-    ]);
-  });
+  if (zoblin) {
+    zoblin.addEventListener("click", (e) => {
+      e.stopPropagation();
 
-  // zoblin main1
-  document.getElementById("main1_roblin").addEventListener("click", (e) => {
-    e.stopPropagation();
-    startDialogue([
-      "Hey! First train, as usual?",
-      "Well, head on inside. I heard the others chatting about you again.",
-      "Especially that Coblin kid. He thinks he’s so good in the lab.",
-      "Ah, I guess he's there for a reason, no?",
-      "Punch him for me? He still owes me for holding the trains for him."
-    ]);
-  });
+      startDialogue([
+        "Hey! First train, as usual?",
+        "Well, head on inside. I heard the others chatting about you again.",
+        "Especially that Coblin kid. He thinks he’s so good in the lab.",
+        "Ah, I guess he's there for a reason, no?",
+        "Punch him for me? He still owes me for holding the trains for him."
+      ]);
+    });
+  }
 
-  // Click anywhere
-  document.addEventListener("click", () => {
-    if (box.style.display === "block") {
-      advanceDialogue();
-    }
+  document.addEventListener("click", (e) => {
+    if (box.style.display !== "block") return;
+
+    // prevent clicking characters from double-triggering
+    if (e.target.closest("#zoblin_outside")) return;
+
+    advanceDialogue();
   });
 
 });
