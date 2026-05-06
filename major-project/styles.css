@@ -243,6 +243,15 @@ body {
   cursor: pointer;
 }
 
+#lab1_door {
+  position: absolute;
+  top: 70%;
+  height: 15%;
+  z-index: 6;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 #lab1_coblin {
   position: absolute;
   top: 35%;
