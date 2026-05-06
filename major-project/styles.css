@@ -413,8 +413,8 @@ body {
 @media screen and (max-width: 430px) {
   /* iPhone 12 / Pixel 7 range */
 
-  .mobile {
-    display: block;
+  .desktop {
+    display: none !important;
   }
 
   #dialogue_box {
@@ -691,7 +691,8 @@ body {
     display: none;
   }
 
-  #M_end1, #M_end2 {
+  #M_end1,
+  #M_end2 {
     display: block;
     position: absolute;
     width: 100%;
