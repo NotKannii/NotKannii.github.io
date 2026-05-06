@@ -492,7 +492,7 @@ body {
   #main1_background {
     display: none;
   }
-  
+
   #M_main1_background {
     display: block;
     position: absolute;
@@ -500,6 +500,15 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: 1;
+  }
+
+  #main1_lab_door {
+    position: absolute;
+    height: 25%;
+    top: 8.5%;
+    left: -26%;
+    z-index: 3;
+    cursor: pointer;
   }
 
 }
