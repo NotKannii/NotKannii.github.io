@@ -111,7 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-    // CODEWORD // document.addEventListener("DOMContentLoaded", () => {
+    // CODEWORD //
+    document.addEventListener("DOMContentLoaded", () => {
 
     const input = document.getElementById("lab1_input");
     const button = document.getElementById("submit_code");
