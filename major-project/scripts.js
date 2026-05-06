@@ -221,6 +221,39 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+
+
+  const goodheld = document.getElementById("holding2_held");
+  const goodheldMobile = document.getElementById("M_holding2_held");
+
+  function holding1Dialogue(e) {
+    e.stopPropagation();
+
+    startDialogue(["Foolish",
+        "*What is THAT*",
+        "You set these chains, why break them?",
+        "*You didn't restrain it. This subject was not in your records.*",
+        "*It squints its eyes. Eye? It squints.*",
+        "You truly didn't...",
+        "Maybe you are different, I was wrong",
+        "I don't forgive these people.",
+        "Bringing me here was one thing. Keeping me? I am a beacon.",
+        "A beacon for the beings above.",
+        "But, maybe you're the piece.",
+        "Leave now. It's here. It will not wait much longer."
+      ]);
+  }
+
+  if (goodheld) {
+    goodheld.addEventListener("click", holding1Dialogue);
+  }
+
+  if (goodheldMobile) {
+    goodheldMobile.addEventListener("click", holding1Dialogue);
+  }
+
+
+
   const goodarua = document.getElementById("bal_arua_good");
   if (goodarua) {
     goodarua.addEventListener("click", (e) => {
