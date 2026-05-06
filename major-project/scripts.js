@@ -86,11 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (value === correctCode) {
         localStorage.setItem("lab1_correct", "true");
 
-        feedback.innerText = "ACCESS GRANTED";
+        feedback.innerText = "ACCESS GRANTED. ENTER NOW.";
 
         setTimeout(() => {
           window.location.href = "holding1.html";
-        }, 1000);
+        }, 2000);
 
         return;
       }
