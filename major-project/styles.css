@@ -104,10 +104,10 @@ body {
 
 .copyright {
   position: absolute;
-  top: 290%;
-  left: 5%;
+  top: 320%;
+  right: -420%;
   color: white;
-  font-size: 32px;
+  font-size: 18px;
   opacity: 0.8;
   pointer-events: none;
 }
