@@ -189,7 +189,7 @@ body {
   cursor: pointer;
 }
 
-.outside_door {
+#outside_door {
   position: absolute;
   height: 19%;
   top: 38.5%;
