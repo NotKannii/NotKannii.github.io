@@ -195,11 +195,23 @@ body {
 }
 
 #main1_roblin {
-
+  position: absolute;
+  top: 200px;
+  left: 60%;
+  height: 50%;
+  z-index: 6;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 #main1_boblin {
-
+  position: absolute;
+  top: 200px;
+  right: 50%;
+  height: 65%;
+  z-index: 6;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 /* --- LAB 1 --- */
