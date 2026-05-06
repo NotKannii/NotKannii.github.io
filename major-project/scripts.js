@@ -48,7 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (roblin) {
     roblin.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["Roblin talk"]);
+      startDialogue(["Good morning.",
+        "Is there something you need?",
+        "...",
+        "Higher ups said no entry here. Not sure why though.",
+        "You don't even know? Huh...",
+        "Maybe go ask the big 23-year-old in the lab."
+      ]);
     });
   }
 
@@ -56,7 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (boblin) {
     boblin.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["Boblin talk"]);
+      startDialogue(["Good morning!"
+        "Best morning! It's 1/8 today!",
+        "...",
+        "Ahem, excuse me, him and I were out lastnight.",
+        "You should probably head in, already! He's been yelling nonstop in there.",
+        "Poor lab kitty..." 
+        ]);
     });
   }
 
@@ -75,6 +87,14 @@ document.addEventListener("DOMContentLoaded", () => {
       startDialogue(["Coblin talk"]);
     });
   }
+
+  /* =======================
+     BAAADDD : HOLDING 1 / LAB2 / MAIN2 / BAL 1 CHARACTERS
+  ======================= */
+
+/* =======================
+     GUUUUD : HOLDING 2 / BAL 2 CHARACTERS
+  ======================= */
 
   /* =======================
      LAB 1 CODE SYSTEM (FIXED)
