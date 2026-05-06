@@ -57,6 +57,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const boblin = document.getElementById("main1_boblin");
+
+  if (boblin) {
+    roblin.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      startDialogue([
+        "Hey! First train, as usual?",
+        "Well, head on inside. I heard the others chatting about you again.",
+        "Especially that Coblin kid. He thinks he’s so good in the lab.",
+        "Ah, I guess he's there for a reason, no?",
+        "Punch him for me? He still owes me for holding the trains for him."
+      ]);
+    });
+  }
+
   document.addEventListener("click", (e) => {
     if (box.style.display !== "block") return;
 
@@ -67,3 +83,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+// TEMPLATE //
+
+/* ---------- TMEPLATEEEEE REPLACE "NAME" AND "ID"
+
+const NAME = document.getElementById("ID");
+
+  if (NAME) {
+    roblin.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      startDialogue([
+        "Hey! First train, as usual?",
+        "Well, head on inside. I heard the others chatting about you again.",
+        "Especially that Coblin kid. He thinks he’s so good in the lab.",
+        "Ah, I guess he's there for a reason, no?",
+        "Punch him for me? He still owes me for holding the trains for him."
+      ]);
+    });
+  }
+
+ ---------- */
