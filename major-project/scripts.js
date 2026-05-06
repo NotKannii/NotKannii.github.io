@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const box = document.getElementById("dialogue_box");
   const text = document.getElementById("dialogue_text");
 
+  box.style.display = "block"; // show
+  box.style.display = "none";  // hide
+
   function startDialogue(lines) {
     currentLines = lines;
     currentIndex = 0;
@@ -49,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ]);
   });
 
-    // zoblin main1
-  document.getElementById("main1_zoblin").addEventListener("click", (e) => {
+  // zoblin main1
+  document.getElementById("main1_roblin").addEventListener("click", (e) => {
     e.stopPropagation();
     startDialogue([
       "Hey! First train, as usual?",
