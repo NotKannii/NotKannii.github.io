@@ -1,22 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-  let autoRedirect = null;
-
   /* =======================
      DIALOGUE SYSTEM
   ======================= */
 
   let currentLines = [];
   let currentIndex = 0;
+  let autoRedirect = null;
 
   const box = document.getElementById("dialogue_box");
   const text = document.getElementById("dialogue_text");
 
-  function startDialogue(lines) {
+  function startDialogue(lines, nextScene = null) {
     currentLines = lines;
     currentIndex = 0;
 
-    autoRedirect = redirect;
+    redirect = nextScene;
 
     box.style.display = "block";
     text.innerText = currentLines[currentIndex];
