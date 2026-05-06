@@ -437,6 +437,10 @@ body {
     display: none !important;
   }
 
+  .mobile {
+    display: block;
+  }
+
   #dialogue_box {
     display: none;
     font-size: 18px;
