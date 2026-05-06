@@ -152,15 +152,15 @@ body {
 
 #zoblin_outside_dialogue_box {
   position: absolute;
-  top: 20px; 
+  top: 20px;
   left: 45%;
-  transform: translateX(-50%); 
-  width: 80%; 
-  padding: 50px; 
-  background: rgba(0, 0, 0, 0.85); 
-  color: white; 
-  font-size: 20px; 
-  z-index: 100; 
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 20px;
+  z-index: 100;
   text-align: center;
   display: none;
 }
@@ -176,7 +176,7 @@ body {
 }
 
 #main1_bal_door {
-  position:absolute;
+  position: absolute;
   height: 50%;
   top: 15%;
   left: 63%;
@@ -186,7 +186,7 @@ body {
 }
 
 #main1_lab_door {
-  position:absolute;
+  position: absolute;
   height: 43%;
   top: 20%;
   left: 36%;
@@ -296,13 +296,44 @@ body {
 #holding2_held {
   position: absolute;
   z-index: 2;
+  transform: rotate(-90deg);
+  height: 45%;
+  top: 30%;
+  left: 25%;
   pointer-events: auto;
   cursor: pointer;
 }
 
 /* --- LAB 2 --- */
 
+#lab2_car {
+  position: absolute;
+  top: 70%;
+  height: 15%;
+  left: 45%;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 /* --- MAIN 2 --- */
+
+#main2_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#main2_oblins {
+  position: absolute;
+  top: 10%;
+  height: 40%;
+  z-index: 5;
+  pointer-events: auto;
+  cursor: pointer;
+}
 
 /* --- BAL 1 --- */
 
