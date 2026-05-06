@@ -102,6 +102,16 @@ body {
   pointer-events: none;
 }
 
+.copyright {
+  position: absolute;
+  top: 290%;
+  left: 5%;
+  color: white;
+  font-size: 32px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
 /* ---------- TITLE SCREEN ---------- */
 
 #title-screen {
