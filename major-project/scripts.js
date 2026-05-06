@@ -1,29 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  let lore1 = localStorage.getItem("holding1_lore1_seen") === "true";
-  let lore2 = localStorage.getItem("holding1_lore2_seen") === "true";
-  let labCorrect = localStorage.getItem("lab1_correct") === "true";
-
-const releaseBtn = document.getElementById("holding_release");
-
-if (releaseBtn) {
-  releaseBtn.addEventListener("click", () => {
-    window.location.href = "holding2.html";
-  });
-}
-
-  function checkHoldingUnlock() {
-    const releaseBtn = document.getElementById("holding_release");
-
-    if (!releaseBtn) return;
-
-    if (labCorrect && lore1 && lore2) {
-      releaseBtn.style.display = "block";
-    } else {
-      releaseBtn.style.display = "none";
-    }
-  }
-
   /* =======================
      DIALOGUE SYSTEM
   ======================= */
@@ -128,20 +104,13 @@ if (releaseBtn) {
   if (badheld) {
     badheld.addEventListener("click", (e) => {
       e.stopPropagation();
-
-      localStorage.setItem("holding1_lore1_seen", "true");
-      lore1 = true;
-
-      startDialogue([
-        "eow",
+      startDialogue(["eow",
         "*Why do you keep this cat around?*",
         "*It stares. A little too long.*",
         "*Maybe that's why.*"
       ]);
-
-      checkHoldingUnlock();
-  });
-}
+    });
+  }
 
 /* =======================
      GUUUUD : HOLDING 2 / BAL 2 CHARACTERS
@@ -151,18 +120,11 @@ if (releaseBtn) {
   if (goodheld) {
     goodheld.addEventListener("click", (e) => {
       e.stopPropagation();
-
-      localStorage.setItem("holding1_lore2_seen", "true");
-      lore2 = true;
-
-      startDialogue([
-        "RUFURUFRURF",
+      startDialogue(["RUFURUFRURF",
         "*Why do you keep this cat around?*",
         "*It stares. A little too long.*",
         "*Maybe that's why.*"
       ]);
-
-      checkHoldingUnlock();
     });
   }
 
@@ -187,10 +149,10 @@ if (releaseBtn) {
       if (value === correctCode) {
         localStorage.setItem("lab1_correct", "true");
 
-        feedback.innerText = "ACCESS GRANTED. ENTER NOW.";
+        feedback.innerText = "ACCESS GRANTED. SUBJECT RELEASED.";
 
         setTimeout(() => {
-          window.location.href = "holding1.html";
+          window.location.href = "holding2.html";
         }, 2000);
 
         return;
@@ -221,59 +183,6 @@ if (releaseBtn) {
   if (releaseBtn) {
     releaseBtn.style.display = isCorrect ? "block" : "none";
   }
-
-  document.addEventListener("DOMContentLoaded", () => {
-
-  const isCorrect = localStorage.getItem("lab1_correct") === "true";
-
-  const choice1 = document.getElementById("choice1");
-  const choice2 = document.getElementById("choice2");
-  const choice3 = document.getElementById("choice3");
-
-  if (!choice1 || !choice2 || !choice3) return;
-
-  let seen1 = false;
-  let seen2 = false;
-
-  function checkUnlock() {
-    if (!isCorrect) return;
-
-    if (seen1 && seen2) {
-      choice3.style.display = "block";
-    }
-  }
-
-  choice1.addEventListener("click", () => {
-    seen1 = true;
-    localStorage.setItem("holding1_lore1_seen", "true");
-
-    // your dialogue system here
-    startDialogue([
-      "This place used to process incoming trains...",
-      "Now it's something else."
-    ]);
-
-    checkUnlock();
-  });
-
-  choice2.addEventListener("click", () => {
-    seen2 = true;
-    localStorage.setItem("holding1_lore2_seen", "true");
-
-    startDialogue([
-      "They say no one leaves this wing unchanged...",
-      "I don't know if that's true."
-    ]);
-
-    checkUnlock();
-  });
-
-  choice3.addEventListener("click", () => {
-    // unlock good route
-    window.location.href = "holding2.html";
-  });
-
-});
 
   /* =======================
      CLICK TO ADVANCE DIALOGUE
