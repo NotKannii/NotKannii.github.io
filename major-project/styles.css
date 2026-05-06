@@ -662,4 +662,26 @@ body {
     cursor: pointer;
   }
 
+  #bal1_background {
+    display: none;
+  }
+
+  #M_bal_background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  #bal_arua_bad {
+    position: absolute;
+    height: 10%;
+    top: 50%;
+    left: 34%;
+    z-index: 7;
+    cursor: pointer;
+  }
+
 }
