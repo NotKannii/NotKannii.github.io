@@ -1,5 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  let lore1 = localStorage.getItem("holding1_lore1_seen") === "true";
+  let lore2 = localStorage.getItem("holding1_lore2_seen") === "true";
+  let labCorrect = localStorage.getItem("lab1_correct") === "true";
+
+const releaseBtn = document.getElementById("holding_release");
+
+if (releaseBtn) {
+  releaseBtn.addEventListener("click", () => {
+    window.location.href = "holding2.html";
+  });
+}
+
+  function checkHoldingUnlock() {
+    const releaseBtn = document.getElementById("holding_release");
+
+    if (!releaseBtn) return;
+
+    if (labCorrect && lore1 && lore2) {
+      releaseBtn.style.display = "block";
+    } else {
+      releaseBtn.style.display = "none";
+    }
+  }
+
   /* =======================
      DIALOGUE SYSTEM
   ======================= */
@@ -104,13 +128,20 @@ document.addEventListener("DOMContentLoaded", () => {
   if (badheld) {
     badheld.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["eow",
+
+      localStorage.setItem("holding1_lore1_seen", "true");
+      lore1 = true;
+
+      startDialogue([
+        "eow",
         "*Why do you keep this cat around?*",
         "*It stares. A little too long.*",
         "*Maybe that's why.*"
       ]);
-    });
-  }
+
+      checkHoldingUnlock();
+  });
+}
 
 /* =======================
      GUUUUD : HOLDING 2 / BAL 2 CHARACTERS
@@ -120,11 +151,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (goodheld) {
     goodheld.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["RUFURUFRURF",
+
+      localStorage.setItem("holding1_lore2_seen", "true");
+      lore2 = true;
+
+      startDialogue([
+        "RUFURUFRURF",
         "*Why do you keep this cat around?*",
         "*It stares. A little too long.*",
         "*Maybe that's why.*"
       ]);
+
+      checkHoldingUnlock();
     });
   }
 
