@@ -267,7 +267,37 @@ body {
 
 /* --- HOLDING 1 --- */
 
+#holding1_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#holding1_held {
+  position: absolute;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 /* --- HOLDING 2 [INFO ENTERED] --- */
+
+#holding2_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#holding2_held {
+  position: absolute;
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
+}
 
 /* --- LAB 2 --- */
 
