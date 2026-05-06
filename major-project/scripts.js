@@ -53,8 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "...",
         "Higher ups said no entry here. Not sure why though.",
         "You don't even know? Huh...",
-        "Maybe go ask the big 23-year-old in the lab."
-      ]);
+        "Maybe go ask the big 23-year-old in the lab."]);
     });
   }
 
@@ -67,8 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "...",
         "Ahem, excuse me, him and I were out lastnight.",
         "You should probably head in, already! He's been yelling nonstop in there.",
-        "Poor lab kitty..." 
-        ]);
+        "Poor lab kitty..."]);
     });
   }
 
