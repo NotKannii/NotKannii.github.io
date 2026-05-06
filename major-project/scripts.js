@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
         feedback.innerText = "ACCESS GRANTED. ENTER NOW.";
 
         setTimeout(() => {
-          window.location.href = "holding2.html";
+          window.location.href = "holding1.html";
         }, 2000);
 
         return;
@@ -183,6 +183,59 @@ document.addEventListener("DOMContentLoaded", () => {
   if (releaseBtn) {
     releaseBtn.style.display = isCorrect ? "block" : "none";
   }
+
+  document.addEventListener("DOMContentLoaded", () => {
+
+  const isCorrect = localStorage.getItem("lab1_correct") === "true";
+
+  const choice1 = document.getElementById("choice1");
+  const choice2 = document.getElementById("choice2");
+  const choice3 = document.getElementById("choice3");
+
+  if (!choice1 || !choice2 || !choice3) return;
+
+  let seen1 = false;
+  let seen2 = false;
+
+  function checkUnlock() {
+    if (!isCorrect) return;
+
+    if (seen1 && seen2) {
+      choice3.style.display = "block";
+    }
+  }
+
+  choice1.addEventListener("click", () => {
+    seen1 = true;
+    localStorage.setItem("holding1_lore1_seen", "true");
+
+    // your dialogue system here
+    startDialogue([
+      "This place used to process incoming trains...",
+      "Now it's something else."
+    ]);
+
+    checkUnlock();
+  });
+
+  choice2.addEventListener("click", () => {
+    seen2 = true;
+    localStorage.setItem("holding1_lore2_seen", "true");
+
+    startDialogue([
+      "They say no one leaves this wing unchanged...",
+      "I don't know if that's true."
+    ]);
+
+    checkUnlock();
+  });
+
+  choice3.addEventListener("click", () => {
+    // unlock good route
+    window.location.href = "holding2.html";
+  });
+
+});
 
   /* =======================
      CLICK TO ADVANCE DIALOGUE
