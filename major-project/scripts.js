@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("ZOBLIN JS LOADED");
 
   const lines = [
-    "palcholder.",
-    "RUFRUFURFUURF"
+    "Hey! First train, as usual?",
+    "Well, head on inside. I heard the others chatting about you again."
   ];
 
   let currentLine = 0;
