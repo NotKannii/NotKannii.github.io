@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  let autoRedirect = null;
+
   /* =======================
      DIALOGUE SYSTEM
   ======================= */
@@ -14,20 +16,29 @@ document.addEventListener("DOMContentLoaded", () => {
     currentLines = lines;
     currentIndex = 0;
 
+    autoRedirect = redirect;
+
     box.style.display = "block";
     text.innerText = currentLines[currentIndex];
   }
 
-  function advanceDialogue() {
-    currentIndex++;
+ function advanceDialogue() {
+  currentIndex++;
 
-    if (currentIndex >= currentLines.length) {
-      box.style.display = "none";
-      return;
+  if (currentIndex >= currentLines.length) {
+    box.style.display = "none";
+
+    // bal 2
+    if (autoRedirect) {
+      window.location.href = autoRedirect;
+      autoRedirect = null;
     }
 
-    text.innerText = currentLines[currentIndex];
+    return;
   }
+
+  text.innerText = currentLines[currentIndex];
+}
 
   /* =======================
      OUTSIDE / MAIN / LAB CHARACTERS
@@ -162,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "What now?",
         "I need its replacement.",
         "You seem perfect."
-      ]);
+      ] "end1.html");
     });
   }
 
@@ -206,7 +217,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "This city regards you as the 'Pioneer of Science', the 'Condorian' champion. Impressive.",
         "I wonder what we can do with that.",
         "*What did you just get into...*"
-      ]);
+      ] "end2.html" );
     });
   }
 
