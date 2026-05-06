@@ -64,14 +64,14 @@ body {
 
 #ending_text {
   position: absolute;
-  bottom: 25%;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
 
   width: 60%;
   padding: 20px;
 
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 20px;
   text-align: center;
@@ -84,7 +84,7 @@ body {
   top: auto;
   right: auto;
 
-  bottom: 10%;
+  bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
 
