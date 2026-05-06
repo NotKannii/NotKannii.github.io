@@ -1,4 +1,4 @@
-function createDialogue(characterId, boxId, textId, lines, duration = 8000) {
+function createDialogue(characterId, boxId, textId, lines, duration = 10000) {
   let currentLine = 0;
 
   const character = document.getElementById(characterId);
