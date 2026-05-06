@@ -152,10 +152,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if (badarua) {
     badarua.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["eow",
-        "*Why do you keep this cat around?*",
-        "*It stares. A little too long.*",
-        "*Maybe that's why.*"
+      startDialogue(["I give you are in charge here? It's a pleasure to finally meet.",
+        "Is it your first time seeing something like me? Matters not, you won't make much of a difference in the end.",
+        "I'm here because you have something that belongs to me.",
+        "*The thing that was in the holding cell had a similar halo.*",
+        "So, where is it?",
+        "*It should still be...*",
+        "Just kidding. It's dead by now. Your so-called 'higher ups' got to it.",
+        "What now?",
+        "I need its replacement.",
+        "You seem perfect."
       ]);
     });
   }
@@ -188,10 +194,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (goodarua) {
     goodarua.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["eow",
-        "*Why do you keep this cat around?*",
-        "*It stares. A little too long.*",
-        "*Maybe that's why.*"
+      startDialogue(["I give you are in charge here? It's a pleasure to finally meet.",
+        "Is it your first time seeing something like me? Matters not, you won't make much of a difference in the end.",
+        "I'm here because you have something that belongs to me.",
+        "*The thing that was in the holding cell had a similar halo.*",
+        "So, where is it?",
+        "*It should still be...*",
+        "Just kidding! It's long gone by now.",
+        "Served its purpose. But, something else has caught my eye.",
+        "You.",
+        "This city regards you as the 'Pioneer of Science', the 'Condorian' champion. Impressive.",
+        "I wonder what we can do with that.",
+        "*What did you just get into...*"
       ]);
     });
   }
