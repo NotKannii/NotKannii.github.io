@@ -41,18 +41,44 @@ document.addEventListener("DOMContentLoaded", () => {
     ]
   );
 
-/* --- TEMPLATE
-
   createDialogue(
-    "lab_scientist",
-    "lab_scientist_box",
-    "lab_scientist_text",
+    "main1_roblin",
+    "dialogue_box",
+    "roblin_main1_dialogue_text",
     [
-      "This lab isn’t supposed to be accessed yet...",
-      "But since you're here, be careful what you touch."
+      "Hey! First train, as usual?",
+      "Well, head on inside. I heard the others chatting about you again.",
+      "Especially that Coblin kid. He think's he so good in the lab.",
+      "Ah, I guess he's there for a reason, no?",
+      "Punch him for me? He still owes me for holding the trains for him."
     ]
   );
 
-TEMPLATE --- */
+  createDialogue(
+    "main1_boblin",
+    "dialogue_box",
+    "boblin_main1_dialogue_text",
+    [
+      "Hey! First train, as usual?",
+      "Well, head on inside. I heard the others chatting about you again.",
+      "Especially that Coblin kid. He think's he so good in the lab.",
+      "Ah, I guess he's there for a reason, no?",
+      "Punch him for me? He still owes me for holding the trains for him."
+    ]
+  );
+
+  /* --- TEMPLATE
+  
+    createDialogue(
+      "lab_scientist",
+      "lab_scientist_box",
+      "lab_scientist_text",
+      [
+        "This lab isn’t supposed to be accessed yet...",
+        "But since you're here, be careful what you touch."
+      ]
+    );
+  
+  TEMPLATE --- */
 
 });
