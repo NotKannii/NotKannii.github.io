@@ -62,6 +62,36 @@ body {
   z-index: 9999;
 }
 
+#ending_text {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 60%;
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+  border: 1px solid white;
+  z-index: 100;
+}
+
+.ending_restart {
+  top: auto;
+  right: auto;
+
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
 /* ---------- TITLE SCREEN ---------- */
 
 #title-screen {
@@ -352,7 +382,8 @@ body {
 
 /* --- BAL 1/2 --- */
 
-#bal_arua_bad, #bal_arua_good {
+#bal_arua_bad,
+#bal_arua_good {
   position: absolute;
   z-index: 2;
   transform: rotate(-90deg);
