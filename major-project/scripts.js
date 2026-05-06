@@ -1,3 +1,5 @@
+/* --- OUTSIDE ZOBLIN TALKING --- */
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("ZOBLIN JS LOADED");
 
@@ -39,3 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 });
+
+/* --- OUTSIDE ZOBLIN TALKING --- */
