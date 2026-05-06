@@ -1,4 +1,5 @@
-function createDialogue(characterId, boxId, textId, lines, duration = 10000) {
+document.addEventListener("DOMContentLoaded", () => {
+
   let currentLines = [];
   let currentIndex = 0;
 
@@ -23,31 +24,24 @@ function createDialogue(characterId, boxId, textId, lines, duration = 10000) {
 
     text.innerText = currentLines[currentIndex];
   }
-}
 
-/* --- Dialouge --- */
+  // Zoblin outside
+  document.getElementById("zoblin_outside").addEventListener("click", (e) => {
+    e.stopPropagation();
+    startDialogue([
+      "Hey! First train, as usual?",
+      "Well, head on inside. I heard the others chatting about you again.",
+      "Especially that Coblin kid. He thinks he’s so good in the lab.",
+      "Ah, I guess he's there for a reason, no?",
+      "Punch him for me? He still owes me for holding the trains for him."
+    ]);
+  });
 
-document.getElementById("zoblin_outside").addEventListener("click", () => {
-  startDialogue([
-    "Hey! First train, as usual?",
-    "Well, head on inside. I heard the others chatting about you again.",
-    "Especially that Coblin kid. He thinks he’s so good in the lab.",
-    "Ah, I guess he's there for a reason, no?",
-    "Punch him for me? He still owes me for holding the trains for him."
-  ]);
-
-  /* --- TEMPLATE
-  
-    createDialogue(
-      "lab_scientist",
-      "lab_scientist_box",
-      "lab_scientist_text",
-      [
-        "This lab isn’t supposed to be accessed yet...",
-        "But since you're here, be careful what you touch."
-      ]
-    );
-  
-  TEMPLATE --- */
+  // Click anywhere
+  document.addEventListener("click", () => {
+    if (box.style.display === "block") {
+      advanceDialogue();
+    }
+  });
 
 });
