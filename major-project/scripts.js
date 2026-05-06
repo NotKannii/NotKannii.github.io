@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-    const car = document.getElementById("lab1_car");
+  const car = document.getElementById("lab1_car");
   if (car) {
     car.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -100,9 +100,33 @@ document.addEventListener("DOMContentLoaded", () => {
      BAAADDD : HOLDING 1 / LAB2 / MAIN2 / BAL 1 CHARACTERS
   ======================= */
 
+  const badheld = document.getElementById("holding1_held");
+  if (badheld) {
+    car.addEventListener("click", (e) => {
+      e.stopPropagation();
+      startDialogue(["eow",
+        "*Why do you keep this cat around?*",
+        "*It stares. A little too long.*",
+        "*Maybe that's why.*"
+      ]);
+    });
+  }
+
 /* =======================
      GUUUUD : HOLDING 2 / BAL 2 CHARACTERS
   ======================= */
+
+  const goodheld = document.getElementById("holding2_held");
+  if (goodheld) {
+    car.addEventListener("click", (e) => {
+      e.stopPropagation();
+      startDialogue(["RUFURUFRURF",
+        "*Why do you keep this cat around?*",
+        "*It stares. A little too long.*",
+        "*Maybe that's why.*"
+      ]);
+    });
+  }
 
   /* =======================
      LAB 1 CODE SYSTEM (FIXED)
@@ -128,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
         feedback.innerText = "ACCESS GRANTED. ENTER NOW.";
 
         setTimeout(() => {
-          window.location.href = "holding1.html";
+          window.location.href = "holding2.html";
         }, 2000);
 
         return;
