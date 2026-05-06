@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     text.innerText = currentLines[currentIndex];
   }
 
+// OUTSIDE //
+
   const zoblin = document.getElementById("zoblin_outside");
 
   if (zoblin) {
@@ -40,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
       ]);
     });
   }
+
+  // MAIN 1 //
 
   const roblin = document.getElementById("main1_roblin");
 
@@ -60,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const boblin = document.getElementById("main1_boblin");
 
   if (boblin) {
-    roblin.addEventListener("click", (e) => {
+    boblin.addEventListener("click", (e) => {
       e.stopPropagation();
 
       startDialogue([
@@ -72,6 +76,21 @@ document.addEventListener("DOMContentLoaded", () => {
       ]);
     });
   }
+
+  // LAB 1 //
+
+  // HOLDING 1 //
+  
+  // HOLDING 2 //
+  
+  // LAB 2 //
+  
+  // MAIN 2 //
+  
+  // BAL 1 //
+  
+  // BAL 2 //
+
 
   document.addEventListener("click", (e) => {
     if (box.style.display !== "block") return;
@@ -91,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const NAME = document.getElementById("ID");
 
   if (NAME) {
-    roblin.addEventListener("click", (e) => {
+    NAME.addEventListener("click", (e) => {
       e.stopPropagation();
 
       startDialogue([
