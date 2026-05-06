@@ -74,7 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (coblin) {
     coblin.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["Coblin talk"]);
+      startDialogue(["Oh, good morning, Ms.",
+        "*He looks distraught*",
+        "Sorry, these tests have been driving me insane.",
+        "It's not looking good. Plus, systems are acting up.",
+        "HighU' wants results today. I hooked it up already, but can you check?",
+        "Thankssssssssssss!"
+      ]);
     });
   }
 
@@ -82,7 +88,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (car) {
     car.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["Coblin talk"]);
+      startDialogue(["eow",
+        "*Why do you keep this cat around?*",
+        "*It stares. A little too long.*",
+        "*Maybe that's why.*"
+      ]);
     });
   }
 
