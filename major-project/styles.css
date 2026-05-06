@@ -349,6 +349,17 @@ body {
 
 /* --- BAL 1 --- */
 
+#bal_arua {
+  position: absolute;
+  z-index: 2;
+  transform: rotate(-90deg);
+  height: 50%;
+  top: 15%;
+  left: 25%;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 /* --- BAL 2 [BAD] --- */
 
 /* --- BAL 3 [GOOD] --- */
