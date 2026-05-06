@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const badheld = document.getElementById("holding1_held");
   if (badheld) {
-    car.addEventListener("click", (e) => {
+    badheld.addEventListener("click", (e) => {
       e.stopPropagation();
       startDialogue(["eow",
         "*Why do you keep this cat around?*",
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const goodheld = document.getElementById("holding2_held");
   if (goodheld) {
-    car.addEventListener("click", (e) => {
+    badheld.addEventListener("click", (e) => {
       e.stopPropagation();
       startDialogue(["RUFURUFRURF",
         "*Why do you keep this cat around?*",
