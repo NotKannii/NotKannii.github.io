@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const goodheld = document.getElementById("holding2_held");
   if (goodheld) {
-    badheld.addEventListener("click", (e) => {
+    goodheld.addEventListener("click", (e) => {
       e.stopPropagation();
       startDialogue(["RUFURUFRURF",
         "*Why do you keep this cat around?*",
