@@ -92,6 +92,19 @@ body {
   padding: 15px 30px;
 }
 
+.title_note {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+
+  color: white;
+  font-size: 18px;
+  opacity: 0.8;
+
+  z-index: 10;
+  pointer-events: none; /* so it doesn't block clicks */
+}
+
 /* ---------- TITLE SCREEN ---------- */
 
 #title-screen {
