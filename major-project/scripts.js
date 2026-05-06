@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const goodheld = document.getElementById("holding2_held");
   const goodheldMobile = document.getElementById("M_holding2_held");
 
-  function holding1Dialogue(e) {
+  function holding2Dialogue(e) {
     e.stopPropagation();
 
     startDialogue(["Foolish",
@@ -223,11 +223,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (goodheld) {
-    goodheld.addEventListener("click", holding1Dialogue);
+    goodheld.addEventListener("click", holding2Dialogue);
   }
 
   if (goodheldMobile) {
-    goodheldMobile.addEventListener("click", holding1Dialogue);
+    goodheldMobile.addEventListener("click", holding2Dialogue);
   }
 
   const goodarua = document.getElementById("bal_arua_good");
