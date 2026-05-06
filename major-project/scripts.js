@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =======================
-     LAB 1 CODE SYSTEM (FIXED)
+     LAB 1 CODE SYSTEM 
   ======================= */
 
   const input = document.getElementById("lab1_input");
