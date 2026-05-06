@@ -128,7 +128,22 @@ document.addEventListener("DOMContentLoaded", () => {
         "*That is NOT cat.*",
         "Have you made the right choice?",
         "*The cat's gaze pierces your soul. Pondering.*",
-        "*Did you make the right choice?"
+        "*Did you make the right choice?*"
+      ]);
+    });
+  }
+
+    const oblins = document.getElementById("main2_oblins");
+  if (oblins) {
+    oblins.addEventListener("click", (e) => {
+      e.stopPropagation();
+      startDialogue(["*Coblin refuses to meet your gaze*",
+        "I'm sorry. I had to tell them about what you did.",
+        "HighU' found out immediately, forced my hand.",
+        "*Zoblin forces a smile. You see through it.*",
+        "*Roblin has moved out of the way of the door, a stern look on his face.*",
+        "*Boblin watches you carefully.*",
+        "*You better get going.*"
       ]);
     });
   }
