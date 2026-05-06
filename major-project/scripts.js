@@ -118,12 +118,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("submit_code");
     const feedback = document.getElementById("lab1_feedback");
 
-    if (!input || !button) return; // prevents errors on other pages
+ if (!input || !button || !feedback) return;
 
     let attempts = 0;
     const maxAttempts = 3;
 
-    const correctCode = "COBLIN"; // THE CODEEE
+    const correctCode = "COBLIN1823"; // THE CODEEE
 
     button.addEventListener("click", () => {
 
