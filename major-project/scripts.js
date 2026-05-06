@@ -173,7 +173,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "What now?",
         "I need its replacement.",
         "You seem perfect."
-      ] "end1.html");
+      ],
+      "end1.html"
+      );
     });
   }
 
@@ -217,7 +219,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "This city regards you as the 'Pioneer of Science', the 'Condorian' champion. Impressive.",
         "I wonder what we can do with that.",
         "*What did you just get into...*"
-      ] "end2.html" );
+      ],
+      "end2.html"
+      );
     });
   }
 
