@@ -25,10 +25,19 @@
         <img src="images/lab1_coblin.PNG" id="lab1_coblin">
         <img src="imgaes/lab1_door.PNG" id="lab1_door">
 
-
         <!-- dialouge boesx -->
-        <div id="">
-            <p id=""></p>
+        <div id="dialogue_box">
+            <p id="dialogue_text"></p>
+        </div>
+
+        <div id="lab1_monitor">
+            <p>Enter authorization code:</p>
+
+            <input id="lab1_input" type="text" placeholder="Enter code..." />
+
+            <button id="submit_code">Submit</button>
+
+            <p id="lab1_feedback"></p>
         </div>
 
     </div>
@@ -36,6 +45,9 @@
     <a href="holding1.html" onclick="return confirm('Continue?')">
         <img src="images/lab1_door.PNG" id="lab1_door">
     </a>
+
+    <script src="scripts.js"></script> <!-- make sure its this exact line -->
+
 
 </body>
 

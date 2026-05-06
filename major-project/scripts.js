@@ -111,7 +111,68 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+    // CODEWORD // document.addEventListener("DOMContentLoaded", () => {
+
+    const input = document.getElementById("lab1_input");
+    const button = document.getElementById("submit_code");
+    const feedback = document.getElementById("lab1_feedback");
+
+    if (!input || !button) return; // prevents errors on other pages
+
+    let attempts = 0;
+    const maxAttempts = 3;
+
+    const correctCode = "COBLIN"; // THE CODEEE
+
+    button.addEventListener("click", () => {
+
+      const value = input.value.trim().toUpperCase();
+
+      if (value === correctCode) {
+        localStorage.setItem("lab1_correct", "true");
+
+        feedback.innerText = "RELEASE PERMISSIONS GRANTED";
+
+        setTimeout(() => {
+          window.location.href = "holding1.html";
+        }, 1000);
+
+        return;
+      }
+
+      attempts++;
+
+      if (attempts >= maxAttempts) {
+        localStorage.setItem("lab1_correct", "false");
+
+        feedback.innerText = "ERROR: SYSTEM LOCKED";
+        button.disabled = true;
+        input.disabled = true;
+
+      } else {
+        feedback.innerText = `INCORRECT (${attempts}/3)`;
+      }
+    });
+
+  });
+
   // HOLDING 1 //
+
+  document.addEventListener("DOMContentLoaded", () => {
+
+    const isCorrect = localStorage.getItem("lab1_correct") === "true";
+
+    const releaseBtn = document.getElementById("release_btn");
+
+    if (releaseBtn) {
+      if (isCorrect) {
+        releaseBtn.style.display = "block";
+      } else {
+        releaseBtn.style.display = "none";
+      }
+    }
+
+  });
 
   // HOLDING 2 //
 
