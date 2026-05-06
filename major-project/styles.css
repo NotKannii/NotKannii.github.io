@@ -471,7 +471,7 @@ body {
     z-index: 1;
   }
 
-  .zoblin_outside {
+  #zoblin_outside {
     position: absolute;
     height: 50%;
     top: 45%;
