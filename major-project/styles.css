@@ -310,10 +310,14 @@ body {
 
 /* --- BAL 3 [GOOD] --- */
 
-/* --- CITY BAD --- */
-
-/* --- CITY GOOD --- */
-
 /* --- END 1 --- */
+
+.ends {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
 
 /* --- END 2 --- */
