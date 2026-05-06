@@ -1,45 +1,58 @@
-/* --- OUTSIDE ZOBLIN TALKING --- */
-
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("ZOBLIN JS LOADED");
-
-  const lines = [
-    "Hey! First train, as usual?",
-    "Well, head on inside. I heard the others chatting about you again."
-  ];
-
+function createDialogue(characterId, boxId, textId, lines, duration = 4000) {
   let currentLine = 0;
 
-  const character = document.getElementById("zoblin_outside");
-  const box = document.getElementById("zoblin_outside_dialogue_box");
-  const text = document.getElementById("zoblin_outside_dialogue_text");
+  const character = document.getElementById(characterId);
+  const box = document.getElementById(boxId);
+  const text = document.getElementById(textId);
 
-  if (!character || !box || !text) {
-    console.log("Missing elements");
-    return;
-  }
+  if (!character || !box || !text) return;
 
   character.addEventListener("click", (e) => {
-  e.stopPropagation();
-  console.log("ZOBLIN CLICKED");
+    e.stopPropagation();
 
-  box.style.display = "block";
+    box.style.display = "block";
+    text.innerText = lines[currentLine];
 
-  text.innerText = lines[currentLine];
+    currentLine++;
 
-  currentLine++;
+    if (currentLine >= lines.length) {
+      currentLine = 0;
+    }
 
-  // reset if at end
-  if (currentLine >= lines.length) {
-    currentLine = 0;
-  }
+    setTimeout(() => {
+      box.style.display = "none";
+    }, duration);
+  });
+}
 
-  // auto-close
-  setTimeout(() => {
-    box.style.display = "none";
-  }, 4000);
+/* --- Dialouge --- */
+
+document.addEventListener("DOMContentLoaded", () => {
+  createDialogue(
+    "zoblin_outside",
+    "zoblin_outside_dialogue_box",
+    "zoblin_outside_dialogue_text",
+    [
+      "Hey! First train, as usual?",
+      "Well, head on inside. I heard the others chatting about you again.",
+      "Especially that Coblin kid. He think's he so good in the lab.",
+      "Ah, I guess he's there for a reason, no?",
+      "Punch him for me? He still owes me for holding the trains for him."
+    ]
+  );
+
+/* --- TEMPLATE
+
+  createDialogue(
+    "lab_scientist",
+    "lab_scientist_box",
+    "lab_scientist_text",
+    [
+      "This lab isn’t supposed to be accessed yet...",
+      "But since you're here, be careful what you touch."
+    ]
+  );
+
+TEMPLATE --- */
+
 });
-
-});
-
-/* --- OUTSIDE ZOBLIN TALKING --- */
