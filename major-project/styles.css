@@ -622,4 +622,13 @@ body {
     cursor: pointer;
   }
 
+  #lab2_car {
+    position: absolute;
+    height: 10%;
+    top: 50%;
+    left: 5%;
+    z-index: 7;
+    cursor: pointer;
+  }
+
 }
