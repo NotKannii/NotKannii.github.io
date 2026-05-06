@@ -655,8 +655,8 @@ body {
 
   #main2_bal_door {
     position: absolute;
-    height: 21%;
-    top: 10%;
+    height: 20%;
+    top: 10.7%;
     left: 48%;
     z-index: 7;
     cursor: pointer;
