@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     text.innerText = currentLines[currentIndex];
   }
 
-// OUTSIDE //
+  // OUTSIDE //
 
   const zoblin = document.getElementById("zoblin_outside");
 
@@ -79,16 +79,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // LAB 1 //
 
+  const coblin = document.getElementById("lab1_coblin");
+
+  if (coblin) {
+    coblin.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      startDialogue([
+        "Hey! First train, as usual?",
+        "Well, head on inside. I heard the others chatting about you again.",
+        "Especially that Coblin kid. He thinks he’s so good in the lab.",
+        "Ah, I guess he's there for a reason, no?",
+        "Punch him for me? He still owes me for holding the trains for him."
+      ]);
+    });
+  }
+
+  const car = document.getElementById("lab1_car");
+
+  if (car) {
+    car.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      startDialogue([
+        "Hey! First train, as usual?",
+        "Well, head on inside. I heard the others chatting about you again.",
+        "Especially that Coblin kid. He thinks he’s so good in the lab.",
+        "Ah, I guess he's there for a reason, no?",
+        "Punch him for me? He still owes me for holding the trains for him."
+      ]);
+    });
+  }
+
   // HOLDING 1 //
-  
+
   // HOLDING 2 //
-  
+
   // LAB 2 //
-  
+
   // MAIN 2 //
-  
+
   // BAL 1 //
-  
+
   // BAL 2 //
 
 
