@@ -480,7 +480,7 @@ body {
     cursor: pointer;
   }
 
- #main1_background {
+  #main1_background {
     display: none;
   }
 
@@ -511,7 +511,7 @@ body {
     cursor: pointer;
   }
 
-    #main1_boblin {
+  #main1_boblin {
     position: absolute;
     height: 40%;
     top: 50%;
@@ -593,6 +593,28 @@ body {
   }
 
   #M_holding1_held {
+    position: absolute;
+    height: 100%;
+    right: -15%;
+    z-index: 5;
+    cursor: pointer;
+  }
+
+  #holding2_background,
+  #holding2_held {
+    display: none;
+  }
+
+  #M_holding2_background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  #M_holding2_held {
     position: absolute;
     height: 100%;
     right: -15%;
