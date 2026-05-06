@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     car2.addEventListener("click", (e) => {
       e.stopPropagation();
       startDialogue(["Tell me, Astrope.",
-        "*That is NOT cat.*",
+        "*That is NOT a cat.*",
         "Have you made the right choice?",
         "*The cat's gaze pierces your soul. Pondering.*",
         "*Did you make the right choice?*"
