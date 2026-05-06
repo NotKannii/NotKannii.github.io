@@ -230,8 +230,6 @@ document.addEventListener("DOMContentLoaded", () => {
     goodheldMobile.addEventListener("click", holding1Dialogue);
   }
 
-
-
   const goodarua = document.getElementById("bal_arua_good");
   if (goodarua) {
     goodarua.addEventListener("click", (e) => {
