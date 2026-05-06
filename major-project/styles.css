@@ -489,4 +489,17 @@ body {
     cursor: pointer;
   }
 
+  #main1_background {
+      display: none;
+  }
+  
+  #M_main1_background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
 }
