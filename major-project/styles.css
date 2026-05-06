@@ -631,7 +631,7 @@ body {
     cursor: pointer;
   }
 
-  #main2_background {
+  #main2_background, #main2_oblins {
     display: none;
   }
 
@@ -646,9 +646,18 @@ body {
 
   #M_main2_oblins {
     position: absolute;
-    height: 10%;
-    top: 50%;
-    left: 34%;
+    height: 89%;
+    top: 5%;
+    left: -5%;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  #main2_bal_door {
+    position: absolute;
+    height: 21%;
+    top: 10%;
+    left: 48%;
     z-index: 7;
     cursor: pointer;
   }
