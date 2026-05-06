@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (boblin) {
     boblin.addEventListener("click", (e) => {
       e.stopPropagation();
-      startDialogue(["Good morning!"
+      startDialogue(["Good morning!",
         "Best morning! It's 1/8 today!",
         "...",
         "Ahem, excuse me, him and I were out lastnight.",
