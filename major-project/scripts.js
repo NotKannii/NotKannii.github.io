@@ -1,71 +1,40 @@
 function createDialogue(characterId, boxId, textId, lines, duration = 10000) {
-  let currentLine = 0;
+  let currentLines = [];
+  let currentIndex = 0;
 
-  const character = document.getElementById(characterId);
-  const box = document.getElementById(boxId);
-  const text = document.getElementById(textId);
+  const box = document.getElementById("dialogue_box");
+  const text = document.getElementById("dialogue_text");
 
-  if (!character || !box || !text) return;
-
-  character.addEventListener("click", (e) => {
-    e.stopPropagation();
+  function startDialogue(lines) {
+    currentLines = lines;
+    currentIndex = 0;
 
     box.style.display = "block";
-    text.innerText = lines[currentLine];
+    text.innerText = currentLines[currentIndex];
+  }
 
-    currentLine++;
+  function advanceDialogue() {
+    currentIndex++;
 
-    if (currentLine >= lines.length) {
-      currentLine = 0;
+    if (currentIndex >= currentLines.length) {
+      box.style.display = "none";
+      return;
     }
 
-    setTimeout(() => {
-      box.style.display = "none";
-    }, duration);
-  });
+    text.innerText = currentLines[currentIndex];
+  }
 }
 
 /* --- Dialouge --- */
 
-document.addEventListener("DOMContentLoaded", () => {
-  createDialogue(
-    "zoblin_outside",
-    "dialogue_box",
-    "zoblin_outside_dialogue_text",
-    [
-      "Hey! First train, as usual?",
-      "Well, head on inside. I heard the others chatting about you again.",
-      "Especially that Coblin kid. He think's he so good in the lab.",
-      "Ah, I guess he's there for a reason, no?",
-      "Punch him for me? He still owes me for holding the trains for him."
-    ]
-  );
-
-  createDialogue(
-    "main1_roblin",
-    "dialogue_box",
-    "roblin_main1_dialogue_text",
-    [
-      "Hey! First train, as usual?",
-      "Well, head on inside. I heard the others chatting about you again.",
-      "Especially that Coblin kid. He think's he so good in the lab.",
-      "Ah, I guess he's there for a reason, no?",
-      "Punch him for me? He still owes me for holding the trains for him."
-    ]
-  );
-
-  createDialogue(
-    "main1_boblin",
-    "dialogue_box",
-    "boblin_main1_dialogue_text",
-    [
-      "Hey! First train, as usual?",
-      "Well, head on inside. I heard the others chatting about you again.",
-      "Especially that Coblin kid. He think's he so good in the lab.",
-      "Ah, I guess he's there for a reason, no?",
-      "Punch him for me? He still owes me for holding the trains for him."
-    ]
-  );
+document.getElementById("zoblin_outside").addEventListener("click", () => {
+  startDialogue([
+    "Hey! First train, as usual?",
+    "Well, head on inside. I heard the others chatting about you again.",
+    "Especially that Coblin kid. He thinks he’s so good in the lab.",
+    "Ah, I guess he's there for a reason, no?",
+    "Punch him for me? He still owes me for holding the trains for him."
+  ]);
 
   /* --- TEMPLATE
   
