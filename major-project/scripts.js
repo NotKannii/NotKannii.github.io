@@ -152,19 +152,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const oblins = document.getElementById("main2_oblins");
-  if (oblins) {
-    oblins.addEventListener("click", (e) => {
-      e.stopPropagation();
-      startDialogue(["*Coblin refuses to meet your gaze*",
-        "I'm sorry. I had to tell them about what you did.",
-        "HighU' found out immediately, forced my hand.",
-        "*Zoblin forces a smile. You see through it.*",
-        "*Roblin has moved out of the way of the door, a stern look on his face.*",
-        "*Boblin watches you carefully.*",
-        "*You better get going.*"
-      ]);
-    });
+  const oblinsDesktop = document.getElementById("main2_oblins");
+  const oblinsMobile = document.getElementById("M_main2_oblins");
+
+  function oblinsDialogue(e) {
+    e.stopPropagation();
+
+    startDialogue([
+      "*Coblin refuses to meet your gaze*",
+      "I'm sorry. I had to tell them about what you did.",
+      "HighU' found out immediately, forced my hand.",
+      "*Zoblin forces a smile. You see through it.*",
+      "*Roblin has moved out of the way of the door, a stern look on his face.*",
+      "*Boblin watches you carefully.*",
+      "*You better get going.*"
+    ]);
+  }
+
+  if (oblinsDesktop) {
+    oblinsDesktop.addEventListener("click", oblinsDialogue);
+  }
+
+  if (oblinsMobile) {
+    oblinsMobile.addEventListener("click", oblinsDialogue);
   }
 
   const badarua = document.getElementById("bal_arua_bad");
