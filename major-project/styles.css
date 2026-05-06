@@ -631,7 +631,8 @@ body {
     cursor: pointer;
   }
 
-  #main2_background, #main2_oblins {
+  #main2_background,
+  #main2_oblins {
     display: none;
   }
 
@@ -675,7 +676,8 @@ body {
     z-index: 1;
   }
 
-  #bal_arua_bad, #bal_arua_good {
+  #bal_arua_bad,
+  #bal_arua_good {
     position: absolute;
     height: 30%;
     top: 20%;
@@ -683,5 +685,20 @@ body {
     z-index: 7;
     cursor: pointer;
   }
+
+  #end_bad,
+  #end_good {
+    display: none;
+  }
+
+  #M_end1, #M_end2 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
 
 }
