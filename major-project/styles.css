@@ -626,7 +626,29 @@ body {
     position: absolute;
     height: 10%;
     top: 50%;
-    left: 5%;
+    left: 34%;
+    z-index: 7;
+    cursor: pointer;
+  }
+
+  #main2_background {
+    display: none;
+  }
+
+  #M_main2_background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  #M_main2_oblins {
+    position: absolute;
+    height: 10%;
+    top: 50%;
+    left: 34%;
     z-index: 7;
     cursor: pointer;
   }
