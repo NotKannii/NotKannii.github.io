@@ -148,6 +148,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+    const badarua = document.getElementById("bal_arua_bad");
+  if (badarua) {
+    badarua.addEventListener("click", (e) => {
+      e.stopPropagation();
+      startDialogue(["eow",
+        "*Why do you keep this cat around?*",
+        "*It stares. A little too long.*",
+        "*Maybe that's why.*"
+      ]);
+    });
+  }
+
 /* =======================
      GUUUUD : HOLDING 2 / BAL 2 CHARACTERS
   ======================= */
@@ -168,6 +180,18 @@ document.addEventListener("DOMContentLoaded", () => {
         "A beacon for the beings above.",
         "But, maybe you're the piece.",
         "Leave now. It's here. It will not wait much longer."
+      ]);
+    });
+  }
+
+    const goodarua = document.getElementById("bal_arua_good");
+  if (goodarua) {
+    goodarua.addEventListener("click", (e) => {
+      e.stopPropagation();
+      startDialogue(["eow",
+        "*Why do you keep this cat around?*",
+        "*It stares. A little too long.*",
+        "*Maybe that's why.*"
       ]);
     });
   }
