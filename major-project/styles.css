@@ -347,7 +347,7 @@ body {
 }
 
 
-/* --- BAL 1 --- */
+/* --- BAL 1/2 --- */
 
 #bal_arua_bad, #bal_arua_good {
   position: absolute;
@@ -360,11 +360,7 @@ body {
   cursor: pointer;
 }
 
-/* --- BAL 2 [BAD] --- */
-
-/* --- BAL 3 [GOOD] --- */
-
-/* --- END 1 --- */
+/* --- END 1/2 --- */
 
 .ends {
   position: absolute;
@@ -373,5 +369,3 @@ body {
   object-fit: cover;
   z-index: 1;
 }
-
-/* --- END 2 --- */
