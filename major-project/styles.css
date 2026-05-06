@@ -197,7 +197,7 @@ body {
 #main1_roblin {
   position: absolute;
   top: 200px;
-  left: 60%;
+  left: 65%;
   height: 50%;
   z-index: 6;
   pointer-events: auto;
@@ -215,6 +215,46 @@ body {
 }
 
 /* --- LAB 1 --- */
+
+#lab1_background {
+  position:absolute;
+  height: 43%;
+  top: 20%;
+  left: 36%;
+  z-index: 2;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#lab1_monitor {
+  position: absolute;
+  top: 200px;
+  left: 65%;
+  height: 50%;
+  z-index: 6;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+#lab1_car {
+  position: absolute;
+  top: 200px;
+  left: 65%;
+  height: 50%;
+  z-index: 6;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+#lab1_coblin {
+  position: absolute;
+  top: 200px;
+  right: 50%;
+  height: 65%;
+  z-index: 6;
+  pointer-events: auto;
+  cursor: pointer;
+}
 
 /* --- HOLDING --- */
 
