@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     currentLines = lines;
     currentIndex = 0;
 
-    redirect = nextScene;
+  autoRedirect = nextScene;
 
     box.style.display = "block";
     text.innerText = currentLines[currentIndex];
