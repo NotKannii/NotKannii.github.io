@@ -502,7 +502,7 @@ body {
     z-index: 1;
   }
 
-    #lab1_coblin {
+  #lab1_coblin {
     position: absolute;
     height: 30%;
     top: 57%;
@@ -511,7 +511,7 @@ body {
     cursor: pointer;
   }
 
-    #lab1_door {
+  #lab1_door {
     position: absolute;
     height: 20%;
     top: 21%;
@@ -520,7 +520,7 @@ body {
     cursor: pointer;
   }
 
-    #lab1_car {
+  #lab1_car {
     position: absolute;
     height: 10%;
     top: 50%;
@@ -529,7 +529,7 @@ body {
     cursor: pointer;
   }
 
-    #lab1_monitor {
+  #lab1_monitor {
     position: absolute;
     height: 15%;
     top: 29%;
@@ -538,7 +538,8 @@ body {
     cursor: pointer;
   }
 
-  #holding1_background, #holding1_held {
+  #holding1_background,
+  #holding1_held {
     display: none;
   }
 
@@ -551,11 +552,10 @@ body {
     z-index: 1;
   }
 
-    #M_holding1_held {
+  #M_holding1_held {
     position: absolute;
-    height: 30%;
-    top: 57%;
-    left: 20%;
+    height: 100%;
+    right: -15%;
     z-index: 5;
     cursor: pointer;
   }

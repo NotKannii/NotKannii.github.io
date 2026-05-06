@@ -14,29 +14,29 @@ document.addEventListener("DOMContentLoaded", () => {
     currentLines = lines;
     currentIndex = 0;
 
-  autoRedirect = nextScene;
+    autoRedirect = nextScene;
 
     box.style.display = "block";
     text.innerText = currentLines[currentIndex];
   }
 
- function advanceDialogue() {
-  currentIndex++;
+  function advanceDialogue() {
+    currentIndex++;
 
-  if (currentIndex >= currentLines.length) {
-    box.style.display = "none";
+    if (currentIndex >= currentLines.length) {
+      box.style.display = "none";
 
-    // bal 2
-    if (autoRedirect) {
-      window.location.href = autoRedirect;
-      autoRedirect = null;
+      // bal 2
+      if (autoRedirect) {
+        window.location.href = autoRedirect;
+        autoRedirect = null;
+      }
+
+      return;
     }
 
-    return;
+    text.innerText = currentLines[currentIndex];
   }
-
-  text.innerText = currentLines[currentIndex];
-}
 
   /* =======================
      OUTSIDE / MAIN / LAB CHARACTERS
@@ -110,26 +110,36 @@ document.addEventListener("DOMContentLoaded", () => {
   ======================= */
 
   const badheld = document.getElementById("holding1_held");
-  if (badheld) {
-    badheld.addEventListener("click", (e) => {
-      e.stopPropagation();
-      startDialogue(["Ah, what a sight seeing you here.",
-        "*What is THAT*",
-        "I take it you're here to observe. Like the rest of them.",
-        "Make it quick.",
-        "*This subject was not in your records. When did it get here?*",
-        "*Better ask Coblin.*",
-        "'Better ask Coblin?' I was really hoping you were different, I was wrong",
-        "Oh, well, it's already here. Your systems felt it.",
-        "Bringing me here was one thing. Keeping me? I am a beacon.",
-        "A beacon for the beings above.",
-        "It's here. It will not wait much longer.",
-        "I wonder who it is this time..."
-      ]);
-    });
+  const badheldMobile = document.getElementById("M_holding1_held");
+
+  function holding1Dialogue(e) {
+    e.stopPropagation();
+
+    startDialogue([
+      "Ah, what a sight seeing you here.",
+      "*What is THAT*",
+      "I take it you're here to observe. Like the rest of them.",
+      "Make it quick.",
+      "*This subject was not in your records. When did it get here?*",
+      "*Better ask Coblin.*",
+      "'Better ask Coblin?' I was really hoping you were different, I was wrong",
+      "Oh, well, it's already here. Your systems felt it.",
+      "Bringing me here was one thing. Keeping me? I am a beacon.",
+      "A beacon for the beings above.",
+      "It's here. It will not wait much longer.",
+      "I wonder who it is this time..."
+    ]);
   }
 
-    const car2 = document.getElementById("lab2_car");
+  if (badheld) {
+    badheld.addEventListener("click", holding1Dialogue);
+  }
+
+  if (badheldMobile) {
+    badheldMobile.addEventListener("click", holding1Dialogue);
+  }
+
+  const car2 = document.getElementById("lab2_car");
   if (car2) {
     car2.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -142,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-    const oblins = document.getElementById("main2_oblins");
+  const oblins = document.getElementById("main2_oblins");
   if (oblins) {
     oblins.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -157,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-    const badarua = document.getElementById("bal_arua_bad");
+  const badarua = document.getElementById("bal_arua_bad");
   if (badarua) {
     badarua.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -172,14 +182,14 @@ document.addEventListener("DOMContentLoaded", () => {
         "I need its replacement.",
         "You seem perfect."
       ],
-      "end1.html"
+        "end1.html"
       );
     });
   }
 
-/* =======================
-     GUUUUD : HOLDING 2 / BAL 2 CHARACTERS
-  ======================= */
+  /* =======================
+       GUUUUD : HOLDING 2 / BAL 2 CHARACTERS
+    ======================= */
 
   const goodheld = document.getElementById("holding2_held");
   if (goodheld) {
@@ -201,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-    const goodarua = document.getElementById("bal_arua_good");
+  const goodarua = document.getElementById("bal_arua_good");
   if (goodarua) {
     goodarua.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -218,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "I wonder what we can do with that.",
         "*What did you just get into...*"
       ],
-      "end2.html"
+        "end2.html"
       );
     });
   }
