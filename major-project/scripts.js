@@ -37,6 +37,30 @@ document.addEventListener("DOMContentLoaded", () => {
     ]);
   });
 
+  // boblin main1
+  document.getElementById("main1_boblin").addEventListener("click", (e) => {
+    e.stopPropagation();
+    startDialogue([
+      "Hey! First train, as usual?",
+      "Well, head on inside. I heard the others chatting about you again.",
+      "Especially that Coblin kid. He thinks he’s so good in the lab.",
+      "Ah, I guess he's there for a reason, no?",
+      "Punch him for me? He still owes me for holding the trains for him."
+    ]);
+  });
+
+    // zoblin main1
+  document.getElementById("main1_zoblin").addEventListener("click", (e) => {
+    e.stopPropagation();
+    startDialogue([
+      "Hey! First train, as usual?",
+      "Well, head on inside. I heard the others chatting about you again.",
+      "Especially that Coblin kid. He thinks he’s so good in the lab.",
+      "Ah, I guess he's there for a reason, no?",
+      "Punch him for me? He still owes me for holding the trains for him."
+    ]);
+  });
+
   // Click anywhere
   document.addEventListener("click", () => {
     if (box.style.display === "block") {
