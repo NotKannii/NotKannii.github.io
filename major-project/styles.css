@@ -434,8 +434,8 @@ body {
     padding: 24px 50px;
   }
 
-  #M_kaphi_train_closed {
-  /* Train closed */
-
+  .background_train_closed {
+    object-position: left center;
   }
+
 }
