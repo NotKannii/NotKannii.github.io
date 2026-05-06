@@ -37,6 +37,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  z-index: 101;
 }
 
 .continue:hover {
