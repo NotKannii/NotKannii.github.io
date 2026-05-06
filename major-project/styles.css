@@ -326,14 +326,26 @@ body {
   z-index: 1;
 }
 
+#main2_bal_door {
+  position: absolute;
+  height: 36%;
+  transform: rotate(-90deg);
+  top: 23%;
+  left: 70%;
+  z-index: 2;
+  cursor: pointer;
+}
+
 #main2_oblins {
   position: absolute;
-  top: 10%;
-  height: 40%;
+  top: 20%;
+  left: 5%;
+  height: 70%;
   z-index: 5;
   pointer-events: auto;
   cursor: pointer;
 }
+
 
 /* --- BAL 1 --- */
 
