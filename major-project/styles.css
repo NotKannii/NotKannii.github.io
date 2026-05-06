@@ -177,12 +177,12 @@ body {
 
 #main1_bal_door {
   position: absolute;
-  height: 50%;
-  top: 15%;
-  left: 63%;
-  z-index: 2;
+  height: 36%;
+  transform: rotate(-90deg);
+  top: 23%;
+  left: 70%;
+  z-index: 1;
   cursor: pointer;
-  /* -- no zindex cuz roblin gonna talk abt it --*/
 }
 
 #main1_lab_door {
