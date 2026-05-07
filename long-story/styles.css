@@ -1,35 +1,22 @@
-/* mobile-first breakpoints, adapted from Bootstrap 
-   extra small (XS) is the baseline */
-
-/* global: general CSS that applies to all layouts */
-
-
-
-
-/* layout: extra small — portrait phones, no media query */
-
-
-
-/* layout: small — tablets, 576px and up */
-@media (min-width: 576px) { 
-    /* CSS goes here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/* layout: medium — laptops, 768px and up */
-@media (min-width: 768px) { 
-    /* CSS goes here */
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
-
-/* layout: large — smaller desktops, 992px and up */
-@media (min-width: 992px) { 
-    /* CSS goes here */
+.panel {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
-
-
-/* layout: extra large — larger desktops, 1200px and up */
-@media (min-width: 1200px) { 
-    /* CSS goes here */
-}
-
