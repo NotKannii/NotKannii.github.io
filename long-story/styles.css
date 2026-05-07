@@ -50,3 +50,25 @@ p {
   font-size: 1.4rem;
   line-height: 1.6;
 }
+
+/* Background Images */
+
+.intro {
+  background-image: url("images/train_station");
+}
+
+.station {
+  background-image: url("images/rain_window");
+}
+
+.street {
+  background-image: url("images/dog_sad");
+}
+
+.alley {
+  background-image: url("images/rainy_night");
+}
+
+.sunrise {
+  background-image: url("images/dog_ponder");
+}
