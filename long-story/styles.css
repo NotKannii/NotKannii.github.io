@@ -82,21 +82,21 @@ p {
 /* Background Images */
 
 .intro {
-    background-image: url("images/train_station");
+    background-image: url("images/train_station.jpg");
 }
 
 .station {
-    background-image: url("images/rain_window");
+    background-image: url("images/rain_window.jpg");
 }
 
 .street {
-    background-image: url("images/dog_sad");
+    background-image: url("images/dog_sad.jpg");
 }
 
 .alley {
-    background-image: url("images/rainy_night");
+    background-image: url("images/rainy_night.jpg");
 }
 
 .sunrise {
-    background-image: url("images/dog_ponder");
+    background-image: url("images/dog_ponder.jpg");
 }
